@@ -1,6 +1,6 @@
 ## Welcome to Teschendorff Lab
 
-this new site is under development (see [Link](https://aeteschendorff-lab.github.io)   and  http://www.picb.ac.cn/compsysg )
+this new site is under development (see [https://aeteschendorff-lab.github.io](https://aeteschendorff-lab.github.io)   and  http://www.picb.ac.cn/compsysg )
 
 ### Brief overview of our research
 
