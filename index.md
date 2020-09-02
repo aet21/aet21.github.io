@@ -10,7 +10,9 @@ Our lab is focused on developing and applying advanced statistical and computati
 
 * [Avoiding common pitfalls in machine learning omic data science, **_Nature Materials 2019_** (IF~40).](https://doi.org/10.1038/s41563-018-0241-z)
 
-* [Identification of differentially methylated cell types in epigenome-wide association studies, **_Nature Methods 2018_** (IF>20)](https://www.nature.com/articles/s41592-018-0213-x)
+* [Identification of differentially methylated cell types in epigenome-wide association studies, 
+
+**_Nature Methods 2018_** (IF>20)](https://www.nature.com/articles/s41592-018-0213-x)
 
 * [Statistical and integrative system-level analysis of DNA methylation data, **_Nature Rev Genet 2018_** (IF~40)](https://www.nature.com/articles/nrg.2017.86)
 
