@@ -8,15 +8,15 @@ Our lab is focused on developing and applying advanced statistical and computati
 
 ### Key Papers
 
-* [Avoiding common pitfalls in machine learning omic data science, _Nature Materials 2019_ (IF~40).](https://doi.org/10.1038/s41563-018-0241-z)
+* [Avoiding common pitfalls in machine learning omic data science, **_Nature Materials 2019_** (IF~40).](https://doi.org/10.1038/s41563-018-0241-z)
 
-* [Identification of differentially methylated cell types in epigenome-wide association studies, _Nature Methods 2018_ (IF>20)](https://www.nature.com/articles/s41592-018-0213-x)
+* [Identification of differentially methylated cell types in epigenome-wide association studies, **_Nature Methods 2018_** (IF>20)](https://www.nature.com/articles/s41592-018-0213-x)
 
-* [Statistical and integrative system-level analysis of DNA methylation data, _Nature Rev Genet 2018_ (IF~40)](https://www.nature.com/articles/nrg.2017.86)
+* [Statistical and integrative system-level analysis of DNA methylation data, **_Nature Rev Genet 2018_** (IF~40)](https://www.nature.com/articles/nrg.2017.86)
 
-* [Single-cell entropy for accurate estimation of differentiation potency from a cell's transcriptome, _Nature Commun 2017_ (IF>10)](https://www.nature.com/articles/ncomms15599)
+* [Single-cell entropy for accurate estimation of differentiation potency from a cell's transcriptome, **_Nature Commun 2017_** (IF>10)](https://www.nature.com/articles/ncomms15599)
 
-* [Correcting for cell-type heterogeneity in epigenome-wide association studies: revisiting previous analyses, _Nature Methods 2017_ (IF>20)](http://www.nature.com/nmeth/journal/v14/n3/full/nmeth.4187.html)
+* [Correcting for cell-type heterogeneity in epigenome-wide association studies: revisiting previous analyses, **_Nature Methods 2017_** (IF>20)](http://www.nature.com/nmeth/journal/v14/n3/full/nmeth.4187.html)
 
 #### Misc
 
