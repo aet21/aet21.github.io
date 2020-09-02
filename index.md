@@ -8,7 +8,7 @@ Our lab is focused on developing and applying advanced statistical and computati
 
 ### Key Papers
 
-* [Avoiding common pitfalls in machine learning omic data science] (https://doi.org/10.1038/s41563-018-0241-z)  Nature Materials 2019
+* [Avoiding common pitfalls in machine learning omic data science, Nature Materials 2019 (IF~40)](https://doi.org/10.1038/s41563-018-0241-z)  
 *
 Identification of differentially methylated cell types in epigenome-wide association studies
   Nature Methods 2018
