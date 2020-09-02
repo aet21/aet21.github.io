@@ -18,6 +18,10 @@ Our lab is focused on developing and applying advanced statistical and computati
 
 * [Correcting for cell-type heterogeneity in epigenome-wide association studies: revisiting previous analyses, **_Nature Methods 2017_** (IF>20)](http://www.nature.com/nmeth/journal/v14/n3/full/nmeth.4187.html)
 
+```diff
+- text in red
+```
+
 #### Misc
 
 ```markdown
