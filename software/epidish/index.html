@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Teschendorff lab / projects</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/icon.jpg"/>	
+			
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-58618307-1', 'aeteschendorff-lab.github.io');
+		ga('send', 'pageview');
+
+	</script>
+			
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				
+				<div class="navbar-header">
+					<object class="pull-left logo" data="/images/icon.jpg" ></object>
+					<a class="navbar-brand" href="/">Teschendorff Lab</a>
+				</div>
+				
+				<ul class="nav navbar-nav navbar-right">
+                    <!-- 
+                    <li>
+                    
+                    <a href="/blog/">blog</a>
+                    </li> -->
+					
+					<li>
+					
+					<a href="/papers/">Papers</a></li>
+					
+					<li class="active">
+					
+					<a href="/software/">Software</a></li>	  
+					
+					<li>
+					
+					<a href="/team/">People</a></li>	  	  
+	           <li><a href="/">Projects</a></li>			</ul>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	<div class="container" style="max-width: 950px">
+
+
+    
+    <p class="lead">
+</div>
+
+<div class="container">
+
+    <div class="bs-callout bs-callout-danger" >    
+       <div class="row">
+          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
+              <h3><b>EpiDISH (Epigenetic Dissection of Intra Sample Heterogeneity) </b></h3>
+      <br>
+            <p> The EpiDISH package provides tools to infer the proportions of a priori known cell subtypes present in a sample representing a mixture of such cell-types. Inference proceeds via one of 3 methods (Robust Partial Correlations-RPC(Teschendorff et al. 2017), Cibersort (CBS)(Newman et al. 2015), Constrained Projection (CP)(Houseman et al. 2012)), as determined by user. Besides, we also provide a method - CellDMC that allows the identification of differentially methylated cell-types and their directionality of change. For now, the package contains 4 references, including two blood subtypes reference, as well as one reference with epithelial cells, fibroblasts, and total immune cells, and one reference with epithelial cells, fibroblasts, fat cells, and total immune cells, described in (Teschendorff et al. 2017) and (Zheng, Webster, et al. 2018).</p>
+            <br>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-5" style="font-weight:bold">
+              <h3><b></b></h3>
+              <img src="/images/epidish/epidish.jpg" alt="examiner" height="250px">
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+       <br>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseepidish" aria-expanded="true" aria-controls="collapseepidish" style="color:#333">
+              Download and Install
+            </a>
+          </h4>
+        </div>
+        <div id="collapseepidish" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+              
+              
+              <!--detailed information-->
+              <p><strong><a href="https://bioconductor.org/packages/release/bioc/html/EpiDISH.html">[BioConductor Link]</a></strong></p>
+<p><strong>Maintainer</strong>: Shijie Charles Zheng</p>
+<p><strong>Citation</strong> </p>
+<p>Teschendorff, Andrew E, Charles E Breeze, Shijie C Zheng, and Stephan Beck. 2017. “A comparison of reference-based algorithms for correcting cell-type heterogeneity in Epigenome-Wide Association Studies.” BMC Bioinformatics 18 (1):105.</p>
+<p>Teschendorff, Andrew E, and Shijie C Zheng. 2017. “Cell-type deconvolution in epigenome-wide association studies: a review and recommendations.” Epigenomics 9 (5):757–68.</p>
+<p>Zheng, Shijie C, Charles E Breeze, Stephan Beck, and Andrew E Teschendorff. 2018. “Identification of differentially methylated cell-types in Epigenome-Wide Association Studies.” Nature Methods 15 (12):1059–66.</p>
+<p>Zheng, Shijie C, Amy P Webster, Danyue Dong, Andy Feber, David G Graham, Roisin Sullivan, Sarah Jevons, et al. 2018. “A novel cell-type deconvolution algorithm reveals substantial contamination by immune cells in saliva, buccal and cervix.” Epigenomics 10 (7):925–40.</p>
+<p><strong>Installation</strong></p>
+<p>To install this package, start R (version "3.6") and enter:</p>
+<pre><code>if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("EpiDISH", version = "3.9")</code></pre>
+<p><strong>Documentation</strong></p>
+<p>To view documentation for the version of this package installed in your system, start R and enter:</p>
+<pre><code>browseVignettes("EpiDISH")</code></pre>
+<p><strong><a href="https://bioconductor.org/packages/devel/bioc/vignettes/EpiDISH/inst/doc/EpiDISH.html">HTML</a></strong>: EpiDISH Vignette</p>              <!--detailed information over-->   
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+     <div class="bigspacer"></div> <div class="bigspacer"></div>
+     
+ 
+
+
+ <div class="bigspacer"></div> <div class="bigspacer"></div>
+ 
+
+ 
+            
+</div>
+<!---------------------------------------end--------------------------------------->
+
+
+
+
+
+
+<!--
+<div class="bigspacer"></div>
+<center>
+<div class="title">
+Biology
+</div>
+</center>
+<div class="bigspacer"></div>
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+</div>
+ -->
+
+	
+	</div>
+		
+	<div id="footer"><span style="display:none">foo</span></div>
+	    		
+	<!-- MathJax support -->
+	<script type="text/javascript"
+	 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<!-- MathJax config -->
+	<script src="/js/mathjax.config.js"></script>	
+			
+</body>
+</html>
+
