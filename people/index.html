@@ -1,0 +1,98 @@
+---
+layout: default
+title: Teschendorff Lab / people
+categories:
+  - people
+---
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="title">Lab members</div>
+  </div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="people-grid-region">
+  <div class="row">
+    {% assign current_people = site.people | where_exp: "m", "m.alumni != true" | sort: "role_key" %}
+    {% for member in current_people %}
+      <div class="col-12 col-md-6 col-lg-4 memberbox">
+        <div class="media member-card">
+
+          {% if member.profile %}
+            <a class="member-photo-link" href="{{ member.profile | relative_url }}">
+              <div class="member-photo">
+                <img src="{{ member.image | relative_url }}" alt="{{ member.title }}">
+              </div>
+            </a>
+          {% else %}
+            <div class="member-photo">
+              <img src="{{ member.image | relative_url }}" alt="{{ member.title }}">
+            </div>
+          {% endif %}
+
+          <div class="media-body">
+            <div class="head mb-1">
+              {% if member.profile %}
+                <a href="{{ member.profile | relative_url }}" class="off">{{ member.title }}</a>
+              {% else %}
+                {{ member.title }}
+              {% endif %}
+            </div>
+            <p class="note">{{ member.position }}</p>
+          </div>
+
+        </div>
+
+        <div class="bigspacer"></div>
+        <div class="bigspacer"></div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="title">Alumni</div>
+  </div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+  {% assign alumni_people = site.people | where_exp: "m", "m.alumni == true" | sort: "role_key" %}
+  {% for member in alumni_people %}
+    <div class="col-12 col-md-6 col-lg-4 memberbox">
+      <div class="media member-card">
+
+        {% if member.profile and member.profile != "None" %}
+          <a class="member-photo-link" href="{{ member.profile | relative_url }}">
+            <div class="member-photo">
+              <img src="{{ member.image | relative_url }}" alt="{{ member.title }}">
+            </div>
+          </a>
+        {% else %}
+          <div class="member-photo">
+            <img src="{{ member.image | relative_url }}" alt="{{ member.title }}">
+          </div>
+        {% endif %}
+
+        <div class="media-body">
+          <div class="head mb-1">
+            {% if member.profile and member.profile != "None" %}
+              <a href="{{ member.profile | relative_url }}" class="off">{{ member.title }}</a>
+            {% else %}
+              {{ member.title }}
+            {% endif %}
+          </div>
+          <p class="note">{{ member.position }}</p>
+        </div>
+
+      </div>
+
+      <div class="bigspacer"></div>
+      <div class="bigspacer"></div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Teschendorff lab / projects</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/icon.jpg"/>	
+			
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-58618307-1', 'aeteschendorff-lab.github.io');
+		ga('send', 'pageview');
+
+	</script>
+			
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				
+				<div class="navbar-header">
+					<object class="pull-left logo" data="/images/icon.jpg" ></object>
+					<a class="navbar-brand" href="/">Teschendorff Lab</a>
+				</div>
+				
+				<ul class="nav navbar-nav navbar-right">
+                    <!-- 
+                    <li>
+                    
+                    <a href="/blog/">blog</a>
+                    </li> -->
+					
+					<li>
+					
+					<a href="/papers/">papers</a></li>
+					
+					<li class="active">
+					
+					<a href="/software/">software</a></li>	  
+					
+					<li>
+					
+					<a href="/people/">people</a></li>	  	  
+	           <li><a href="/">Projects</a></li>			</ul>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	<div class="container" style="max-width: 950px">
+
+
+    
+    <p class="lead">
+</div>
+
+<div class="container">
+
+ <div class="bs-callout bs-callout-danger"  >    
+       <div class="row">
+          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
+              <h3><b>BMIQ (Beta MIxture Quantile dilation) algorithm</b></h3>
+      <br>
+            <p>A novel model-based intra-array normalisation strategy for 450k data, called BMIQ (Beta MIxture Quantile dilation), to adjust the beta-values of type2 design probes into a statistical distribution characteristic of type1 probes.  BMIQ will be useful as a preprocessing step for any study using the Illumina Inﬁnium 450k platform.</p>
+            <br>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-5" style="font-weight:bold">
+              <h3><b></b></h3>
+              <img src="/images/BMIQ/pic.png" alt="examiner" height="250px">
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+       <br>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color:#333">
+              Download and Install
+            </a>
+          </h4>
+          <p><strong>Citation</strong> </p>
+<p>Teschendorff, A. E. , Marabita, F. , Lechner, M. , Bartlett, T. , Tegner, J. , & Gomez-Cabrero, D. , et al. 2013. “A beta-mixture quantile normalization method for correcting probe design bias in illumina infinium 450 k dna methylation data.” Bioinformatics, 29(2), 189-196.</p>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+              
+              
+              <!--detailed information-->
+              <h3>BMIQ</h3>
+<p><strong><a href="/images/BMIQ/BMIQ_1.4.R">R Script for BMIQ</a></strong> This is the script of BMIQ</p>
+<p><strong><a href="/images/BMIQ/DoBMIQ.R">R Script for DoBMIQ</a></strong> This is a script to run BMIQ on a set of Methylation Data.</p>
+<p>To run BMIQ code, after placing all stuffs(data, probe information, annotation) in one folder, you can use following R code to calculate it out:</p>
+<pre><code>source("DoBMIQ.R")</code></pre>
+<p><strong>Or you can find BMIQ function in ChAMP Package, which is developed by Tiffany Morris</strong></p>
+<p><strong>Installation</strong>
+To install ChAMP package, start R and enter:</p>
+<pre><code>source("http://bioconductor.org/biocLite.R")
+biocLite("ChAMP")</code></pre>              <!--detailed information over-->   
+          </div>
+        </div>
+      </div>
+  </div>
+            
+            
+             <div class="bigspacer"></div> <div class="bigspacer"></div>
+            
+</div>
+<!---------------------------------------end--------------------------------------->
+
+
+
+
+
+
+<!--
+<div class="bigspacer"></div>
+<center>
+<div class="title">
+Biology
+</div>
+</center>
+<div class="bigspacer"></div>
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+</div>
+ -->
+
+	
+	</div>
+		
+	<div id="footer"><span style="display:none">foo</span></div>
+	    		
+	<!-- MathJax support -->
+	<script type="text/javascript"
+	 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<!-- MathJax config -->
+	<script src="/js/mathjax.config.js"></script>	
+			
+</body>
+</html>
+
