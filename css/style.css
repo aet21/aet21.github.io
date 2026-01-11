@@ -6036,7 +6036,7 @@ h6 {
   height: 60px;
   padding: 5px;
 }
-.biglogo {
+.software {
   width: 170px;
   height: 170px;
   padding: 5px;
@@ -6309,4 +6309,94 @@ blockquote p {
     -webkit-transform: scale(1);
     opacity: 0;
   }
+}
+
+.member-photo{
+  width: 80px;
+  aspect-ratio: 37 / 48;
+  overflow: hidden;
+  border-radius: 6px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand-icon {
+  height: 28px;
+  width: 28px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+html, body {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.people-grid-region{
+  /* pick a width that matches your 3 cards nicely */
+  max-width: 1100px;   /* adjust if needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* If you're on Bootstrap 3 (floats), make sure the region contains floats */
+.people-grid-region::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/* Center the entire image region inside each member card */
+.memberbox .media {
+  text-align: center; /* centers inline/block-ish children */
+}
+
+/* cancel the left-float that keeps the image stuck to the left */
+.memberbox .media > a.float-left,
+.memberbox .media > a.pull-left,
+.memberbox .media > a.float-left.mr-3 {
+  float: none !important;
+  display: block;
+  margin: 0 auto 10px; /* center the whole image region */
+}
+
+/* fixed photo region (aligned across all members) */
+.memberbox .member-photo {
+  width: 160px;
+  aspect-ratio: 37 / 48;      /* keeps the region consistent */
+  margin: 0 auto;             /* centers the region */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* make the image fill the region, centered */
+.memberbox .member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* crop to fill */
+  object-position: center;    /* center the crop */
+  display: block;
+}
+
+/* ensure text block doesn’t “sit beside” an old floated image */
+.memberbox .media-body {
+  width: 100%;
+}
+.navbar-brand .brand-text{
+  font-weight: 700;  /* bold */
 }
