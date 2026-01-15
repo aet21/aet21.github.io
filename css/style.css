@@ -6400,3 +6400,18 @@ html, body {
 .navbar-brand .brand-text{
   font-weight: 700;  /* bold */
 }
+
+.media-left {
+  width: 60px;    /* Fixed width */
+  height: 80px;   /* Fixed height based on aspect ratio (60px * 0.75 = 45px) */
+  overflow: hidden;  /* Hide any parts of the image that don’t fit */
+  margin-left: 15px;  /* Space between the image and the title */
+  float: right;  /* Float the image to the right of the title */
+}
+
+.media-left img {
+  width: 100%;   /* Make the image fill the container */
+  height: 100%;  /* Make the image fill the container */
+  object-fit: cover;   /* Crop the image to fit the container */
+  object-position: center;   /* Ensure the image is cropped from the center */
+}

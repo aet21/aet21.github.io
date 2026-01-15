@@ -10,4 +10,5 @@ plugins:
 collections:
   people:
     output: true
-
+  papers:
+    output: true
