@@ -7,6 +7,6 @@ year: 2022
 month: May
 journal: "Genomics Proteomics Bioinformatics"
 paper_url: "https://academic.oup.com/gpb/article/20/3/446/7198180?login=false"
-image: "/papers/covers/Genomics Proteomics Bioinformatics.jpg"
+image: "/papers/covers/Genomics, Proteomics & Bioinformatics.jpg"
 Is_corresponding: "False"
 ---
