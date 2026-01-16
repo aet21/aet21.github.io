@@ -8,4 +8,5 @@ month: July
 journal: "Cancer Research"
 paper_url: "https://aacrjournals.org/cancerres/article-abstract/82/14/2520/706946/Computational-Identification-of-Preneoplastic?redirectedFrom=fulltext"
 image: "/papers/covers/Cancer Research.jpg"
+Is_corresponding: "True"
 ---

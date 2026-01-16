@@ -8,4 +8,5 @@ month: January
 journal: "Geroscience"
 paper_url: "https://doi.org/10.1101/2025.01.21.634004"
 image: "/papers/covers/Geroscience.jpg"
+Is_corresponding: "True"
 ---

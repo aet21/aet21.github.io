@@ -9,4 +9,5 @@ complex trait variation"
         journal: "Nature Genetics"
         paper_url: "https://doi.org/10.14264/6e8bd7f"
         image: "/papers/covers/Nature Genetics.jpg"
+        Is_corresponding: "True"
         ---

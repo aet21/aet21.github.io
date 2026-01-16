@@ -8,4 +8,5 @@ month: September
 journal: "European Journal of Medical Research"
 paper_url: "https://link.springer.com/article/10.1186/s40001-024-02047-4"
 image: "/papers/covers/European Journal of Medical Research.jpg"
+Is_corresponding: "False"
 ---

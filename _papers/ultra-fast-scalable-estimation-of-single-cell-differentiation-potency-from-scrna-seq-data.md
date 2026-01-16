@@ -8,4 +8,5 @@ month: June
 journal: "Bioinformatics"
 paper_url: "https://doi.org/10.1093/bioinformatics/btaa987"
 image: "/papers/covers/Bioinformatics.jpg"
+Is_corresponding: "True"
 ---

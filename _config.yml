@@ -1,5 +1,5 @@
 url: "https://aet21.github.io"
-baseurl: ""
+baseurl: "/aet21.github.io" 
 
 repository: aet21/aet21.github.io
 

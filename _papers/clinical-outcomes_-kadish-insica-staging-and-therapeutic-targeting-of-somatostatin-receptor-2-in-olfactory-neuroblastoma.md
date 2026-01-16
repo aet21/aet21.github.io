@@ -7,5 +7,6 @@ year: 2022
 month: February
 journal: "European Journal of Cancer "
 paper_url: "https://www.ejcancer.com/article/S0959-8049(21)01149-7/abstract"
-image: "/papers/covers/European Journal of Cancer.jpg"
+image: "/papers/covers/European Journal of Cancer .jpg"
+Is_corresponding: "False"
 ---

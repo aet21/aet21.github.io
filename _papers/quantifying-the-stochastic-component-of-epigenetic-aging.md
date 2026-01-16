@@ -8,4 +8,5 @@ month: May
 journal: "Nature Aging"
 paper_url: "https://doi.org/10.1038/s43587-024-00600-8"
 image: "/papers/covers/Nature Aging.jpg"
+Is_corresponding: "True"
 ---

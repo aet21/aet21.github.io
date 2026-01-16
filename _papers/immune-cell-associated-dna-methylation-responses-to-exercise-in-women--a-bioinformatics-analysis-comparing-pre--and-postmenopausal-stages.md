@@ -8,4 +8,5 @@ month: February
 journal: "Experimental Gerontology"
 paper_url: "https://doi.org/10.1016/j.exger.2025.112996"
 image: "/papers/covers/Experimental Gerontology.jpg"
+Is_corresponding: "False"
 ---
