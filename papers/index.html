@@ -7,10 +7,14 @@ categories:
 
 <!-- Google Scholar Section -->
 <div class="col-md-10">
-  <div class="media"></div>
+  <div class="media">
+  </div>
   <div class="media-body">
-    <h3 style="font-size: 19px;">
-      Papers marked in boldface were led or co-led by the Teschendorff-lab.
+    <h3 style="font-size: 19px; margin-bottom: 6px;">
+      Papers marked in <span class="paper-title--corresponding">boldface</span> were led or co-led by the Teschendorff-lab.
+    </h3>
+
+    <h3 style="font-size: 19px; margin-top: 0;">
       For a complete, up-to-date list, please check Google Scholar
       <a href="https://scholar.google.com/citations?user=w2YDjVwAAAAJ&hl=en" class="off">here.</a>
     </h3>
@@ -20,53 +24,61 @@ categories:
 <!-- Paper Section Below Google Scholar -->
 <div class="col-md-10">
   {% assign sorted_papers = site.papers | sort: 'year' | reverse %}
-  {% assign prev_year = "" %}
 
+  {% assign prev_year = "" %}
   {% for paper in sorted_papers %}
     {% capture this_year %}{{ paper.year }}{% endcapture %}
 
     {% if this_year != prev_year %}
       {% if prev_year != "" %}
-        </div> <!-- close papers row -->
+        <!-- Close the previous year section -->
+        </div>
       {% endif %}
-
+      
       {% assign prev_year = this_year %}
-
+      <!-- Start a new row for a new year -->
       <div class="row">
         <div class="col-md-12">
           <h1>{{ this_year }}</h1>
           <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
         </div>
       </div>
-
-      <div class="row"> <!-- open papers row -->
+      <div class="row">
     {% endif %}
 
+    <!-- Paper content for the current year -->
     <div class="col-lg-12 paperbox">
       <div class="media">
+        <!-- Image on the right with fixed aspect ratio and cropped from the center -->
         <div class="media-left">
-          <a href="{{ paper.paper_url }}" target="_blank" class="off">
-            {% if paper.Is_corresponding == "True" %}
-              <strong>{{ paper.title }}</strong>
-            {% else %}
-              {{ paper.title }}
-            {% endif %}
+          <a href="{{ paper.url }}">
+            <img class="media-object paper-image" src="{{ site.baseurl }}{{ paper.image }}" alt="{{ paper.title }}">
           </a>
         </div>
-
+        
         <div class="media-body">
+          <div class="smallhead mb-1">
+            <!-- Paper title wrapped in a clickable link -->
+            <a href="{{ paper.paper_url }}" target="_blank" class="off">
+              {% if paper.Is_corresponding == "True" %}
+                <span class="paper-title paper-title--corresponding">{{ paper.title }}</span>
+              {% else %}
+                <span class="paper-title">{{ paper.title }}</span>
+              {% endif %}
+            </a>
+          </div>
+
           <p class="note">{{ paper.authors }}</p>
           <p class="journal-info">
             <em>{{ paper.journal }} - {{ paper.month }} {{ paper.year }}</em>
           </p>
         </div>
       </div>
-
       <div class="bigspacer"></div>
       <div class="spacer"></div>
     </div>
 
   {% endfor %}
 
-  </div> <!-- close last papers row -->
+  <!-- Close the last row -->
 </div>

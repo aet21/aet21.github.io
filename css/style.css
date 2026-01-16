@@ -6415,3 +6415,10 @@ html, body {
   object-fit: cover;   /* Crop the image to fit the container */
   object-position: center;   /* Ensure the image is cropped from the center */
 }
+
+.paper-title--corresponding{
+  font-weight: 900 !important;
+  color: #000 !important;
+  text-shadow: 0 0 0 #000, 0.25px 0 #000;
+}
+
