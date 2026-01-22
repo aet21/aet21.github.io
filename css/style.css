@@ -6422,3 +6422,61 @@ html, body {
   text-shadow: 0 0 0 #000, 0.25px 0 #000;
 }
 
+.projectbox{
+  text-align: center;          /* 标题等居中 */
+}
+
+.projectbox .note{
+  max-width: 1600px;            /* 控制正文宽度 */
+  margin: 0 auto;              /* 让正文块居中 */
+  text-align: left;            /* 正文左对齐更易读 */
+  padding: 0 5px;             /* 避免贴边（关键） */ 
+  font-size: 22px;  
+  line-height: 1.6;  
+
+}
+
+
+.projectbox .head {
+  font-weight: 700;     /* 加粗 */
+  color: #000000;       /* 纯黑 */
+  font-size: 22px;      /* 可选：让标题更突出 */
+  text-align: left;
+}
+
+
+/* 项目容器基础样式 */
+.projectbox {
+  position: relative; /* 确保绝对定位的参考容器生效 */
+}
+
+/* 图片比例容器 - 核心修复 */
+.projectbox .img-container {
+  width: 100%;
+  padding-top: 45%; /* 400:180 的比例（180/400=45%） */
+  position: relative;
+  overflow: hidden;
+  margin: 1em 0 0; /* 替代图片的 margin-top，控制图片和文字的间距 */
+}
+
+/* 图片样式 - 清理冲突，实现居中 */
+.projectbox .img-container img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* 保持你想要的图片宽度比例 */
+  height: 100%; /* 填满比例容器高度，消除空白 */
+  object-fit: cover; /* 不变形裁剪 */
+  /* 移除所有内联样式，统一用 CSS 控制 */
+  max-width: none;
+  display: block;
+  margin: 0;
+}
+
+.year-divider{
+  border: 0;
+  height: 3px;
+  background: #545458;
+  margin: 8px 0 14px;
+}

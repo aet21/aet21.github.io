@@ -13,3 +13,5 @@ collections:
     output: true
   papers:
     output: true
+  projects:
+    output: true

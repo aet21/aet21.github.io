@@ -1,0 +1,54 @@
+---
+layout: default
+title: Teschendorff Lab / projects
+categories:
+ - projects
+---
+<div class="bigspacer"></div>
+<div class="row">
+  <div class="col-md-12 projectbox">
+    <div class="note">
+      <p>
+        Our research in Computational Systems Epigenomics is primarily aimed at trying to understand how aging and exposure to cancer risk factors predisposes normal cells to carcinogenic transformation. In particular, we hypothesize that DNA methylation changes may play a key role in the earliest stages of cancer development, in driving epigenetic reprogramming and cellular plasticity, two key precancer hallmarks. Thus, a key aim of our research is to elucidate the role of DNA methylation changes in aging and cancer.
+      </p>
+
+      <p>
+        Our approach is both theoretical, recognizing that biology is not an isolated system but a complex system, drawing on advanced concepts and methods from network physics, signal processing and increasingly also artificial intelligence, as well as pragmatic, in order to meet urgent clinical needs in the cancer risk prediction and prevention field.
+      </p>
+      <p style="margin-bottom: 0;">Broadly speaking our current research falls within the following 6 research areas:</p>
+    </div>
+  </div>
+</div>
+<div class="bigspacer"></div>
+<hr class="year-divider" />
+
+{% for project in site.projects %}
+  <div class="row">
+    <div class="col-md-12 projectbox text-center">
+
+      <div class="head">
+        {{ project.title }}
+      </div>
+      
+      <div class="note">
+        {{ project.introductions | markdownify }}
+      </div>
+      <div class="bigspacer"></div>
+      {% if project.images %}
+        <div class="img-container">
+          <img
+            src="{{ project.images | relative_url }}"
+            alt="{{ project.title }}"
+            style="max-width: 100%; height: auto; display: block; margin: 0 auto; margin-top: 1em;"
+          >
+        </div>
+      {% endif %}
+
+
+    </div>
+  </div>
+
+  {% unless forloop.last %}
+    <hr class="year-divider" />
+  {% endunless %}
+{% endfor %}

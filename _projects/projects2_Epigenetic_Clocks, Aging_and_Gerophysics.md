@@ -1,0 +1,7 @@
+---                     
+title: Epigenetic Clocks, Aging and Gerophysics
+categories:
+  - projects
+introductions: "Epigenetic clocks have emerged as promising aging biomarkers. These and other tools may allow identification of individuals who are aging faster than normal and who are hence at higher risk of developing disease. We are particularly interested in understanding and decoding the DNA methylation landscape in aging, specially in relation to the molecular mechanisms that make these epigenetic clocks tick. In recent work, we demonstrated how stochasticity at the single-cell level could underpin the accuracy of an epigenetic clock to predict chronological age, with non-stochastic process driving biological aging. Another main focus has been on cell-type heterogeneity, which presents statistical challenges to interpretation, and which we are addressing by building cell-type specific clocks. We are currently exploring new improved strategies for building such **cell-type specific epigenetic clocks**. Another line of investigation is based on using concepts and ideas from theoretical physics to study aging and to develop novel aging biomarkers"
+images: "/projects/images/Fig2.jpg"
+---
