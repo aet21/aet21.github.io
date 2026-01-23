@@ -6480,3 +6480,89 @@ html, body {
   background: #545458;
   margin: 8px 0 14px;
 }
+
+/* --- People page polish --- */
+.people-page .member-header{
+  display: flex;
+  align-items: center;       /* ✅ 让名字/职位与头像垂直居中对齐 */
+  gap: 18px;
+  padding: 14px 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.65);
+}
+
+/* fixed photo frame */
+.people-page .member-photo-andrew{
+  width: 120px;
+  aspect-ratio: 37 / 48;     /* ✅ 固定头像框比例 */
+  overflow: hidden;
+  border-radius: 10px;
+  flex: 0 0 auto;
+}
+
+.people-page .member-photo-andrew img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* ✅ 填满并裁切 */
+  object-position: center;
+  display: block;
+}
+
+/* name & role */
+.people-page .member-name{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.people-page .member-role{
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* nicer section title aligned with above content */
+.people-page .section-title{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+}
+
+.people-page .area-line{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.smallhead strong,
+.smallhead b{
+  font-weight: 800 !important;
+  color: #000 !important;
+  text-shadow: 0 0 0 #000, 0.25px 0 #000;
+}
+
+.sw-line{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sw-idx{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+
+  min-width: 8px;
+  max-width: 8px;
+  min-height: 8px;
+  max-height: 8px;
+
+  border-radius: 50%;
+  background: currentColor;
+
+  flex: 0 0 auto;      /* 不允许 flex 拉伸 */
+  line-height: 0;      /* 避免行高影响 */
+  box-sizing: content-box;
+}

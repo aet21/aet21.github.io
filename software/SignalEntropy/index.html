@@ -1,175 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Teschendorff Lab / software / Signalling Entropy
+categories:
+  - software
+permalink: /software/SignalEntropy/
+---
 
-<head>
-	<meta charset="utf-8"/>
-	<title>Teschendorff lab / projects</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!-- Customized Bootstrap + Font Awesome + Solarized -->
-    <link href="/css/style.css" rel="stylesheet" media="screen">
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/icon.jpg"/>	
-			
-	<!-- Google Analytics -->	
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-58618307-1', 'aeteschendorff-lab.github.io');
-		ga('send', 'pageview');
-
-	</script>
-			
-</head>
-
-<body>
-	
-	<div id="header">
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
-			<div class="container">	
-				
-				<div class="navbar-header">
-					<object class="pull-left logo" data="/images/icon.jpg" ></object>
-					<a class="navbar-brand" href="/">Teschendorff Lab</a>
-				</div>
-				
-				<ul class="nav navbar-nav navbar-right">
-                    <!-- 
-                    <li>
-                    
-                    <a href="/blog/">blog</a>
-                    </li> -->
-					
-					<li>
-					
-					<a href="/papers/">papers</a></li>
-					
-					<li class="active">
-					
-					<a href="/software/">software</a></li>	  
-					
-					<li>
-					
-					<a href="/people/">people</a></li>	  	  
-	           <li><a href="/">Projects</a></li>			</ul>
-			</div>
-		</nav>	
-	</div>
-	
-	<div class="container">	
-		
-	<div class="container" style="max-width: 950px">
-
-
-    
-    <p class="lead">
-</div>
-
-<div class="container">
-
-<div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <h3><b>Signalling Entropy</b></h3>
+<div class="bs-callout bs-callout-danger">
+  <div class="row">
+    <div class="col-lg-7" style="display: table-cell; vertical-align: middle;">
+      <h3><b>Signalling Entropy</b></h3>
       <br>
-            <p> we will describe one approach which does it at the level of individual samples, in which case the gene expression data must be positively valued (e.g. the expression data must derive from Affy, Illumina or RNA-Seq count data) and the mass action principle is used to construct the sto chastic matrix over the network..</p>
-            <br>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-5" style="font-weight:bold">
-              <h3><b></b></h3>
-              <img src="/images/SignalEntropy/pic.png" alt="examiner" height="250px">
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-       <br>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" style="color:#333">
-              Download and Install
-            </a>
-          </h4>
-        </div>
-        <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-              
-              
-              <!--detailed information-->
-              <p><strong><a href="http://sourceforge.net/projects/signalentropy/files/?source=navbar">[SourceForge Link]</a></strong></p>
-<p><strong>Citation</strong></p>
-<p>Teschendorff, Andrew E, Peter Sollich, and Reimer Kuehn. 2014. "Signalling entropy: A novel network-theoretical framework for systems analysis and interpretation of functional omic data." Methods 67 (3): 282.</p>
-<p><strong>DESCRIPTION OF FILES:</strong></p>
-<p><strong>1) dataSCM2.Rd:</strong> R data object file containing gene expression data matrix, avdataSCM2.m, from the stem cell matrix 2 compendium. Matrix is of size ~17000 genes X 191 samples. The type of cell (i.e hESC=1, iPSC=2 or somatic differentiated=3) is indicated in the phenoSCM2.lv[[1]] entry. Rownames of expression data matrix annotated to Entrez gene IDs.</p>
-<p><strong>2) hprdAsigH-13Jun12.Rd:</strong> R data object file with a model of PPI network specified by the adjacency matrix hprdAsigH.m. Rownames annotated to Entrez gene IDs.</p>
-<p><strong>3) sr.Rd:</strong> an auxiliary R object file needed to run the vignette.</p>
-<p><strong>4) DoIntegPIN.R:</strong> R-function to perform integration of a PPI network with a gene expression data matrix, extracting the maximally connected subnetwork.</p>
-<p><strong>5) CompSR.R:</strong> R-function to compute the entropy rate plus auxiliary functions.</p>
-<p><strong>6) CompSRana.R:</strong> R-function to compute the entropy rate analytically assuming detgailed balance (this will speed up the computation).</p>
-<p><strong>7) <a href="/images/SignalEntropy/intro.pdf">sigent.pdf:</a></strong> vignette/manual pdf.</p>              <!--detailed information over-->   
-          </div>
-        </div>
-      </div>
+      <p>
+        This software implements a sample-level signalling entropy framework. Gene expression data should be
+        positively valued (e.g. Affy/Illumina intensities or RNA-Seq count data). The mass action principle is used
+        to construct the stochastic matrix over a protein interaction network.
+      </p>
+      <br>
+    </div>
+
+    <div class="col-lg-5" style="font-weight: bold;">
+      <img src="{{ '/images/SignalEntropy/pic.png' | relative_url }}" alt="Signalling Entropy" height="250px">
+    </div>
   </div>
-  <div class="bigspacer"></div> <div class="bigspacer"></div><div class="bigspacer"></div> <div class="bigspacer"></div>
-            
 </div>
-<!---------------------------------------end--------------------------------------->
 
+<br>
 
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingSignalEntropy">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSignalEntropy"
+         aria-expanded="true" aria-controls="collapseSignalEntropy" style="color:#333">
+        Download and Install
+      </a>
+    </h4>
+  </div>
 
+  <div id="collapseSignalEntropy" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSignalEntropy">
+    <div class="panel-body">
 
+      <p><strong><a href="http://sourceforge.net/projects/signalentropy/files/?source=navbar">[SourceForge Link]</a></strong></p>
 
+      <p><strong>Citation</strong></p>
+      <p>
+		  - Teschendorff AE, Sollich P, Kuehn R. Signalling entropy: A novel network-theoretical framework for systems analysis and interpretation of functional omic data. <i>Methods</i> 2014 Jun 1;67(3):282-93.
+      </p>
 
-<!--
+      <p><strong>Description of files</strong></p>
+
+      <p><strong>1) dataSCM2.Rd:</strong> R data object containing gene expression matrix <code>avdataSCM2.m</code> (≈17,000 genes × 191 samples) from the Stem Cell Matrix 2 compendium. Cell type is in <code>phenoSCM2.lv[[1]]</code> (hESC=1, iPSC=2, differentiated=3). Row names are Entrez Gene IDs.</p>
+
+      <p><strong>2) hprdAsigH-13Jun12.Rd:</strong> R data object containing a PPI network adjacency matrix <code>hprdAsigH.m</code>. Row names are Entrez Gene IDs.</p>
+
+      <p><strong>3) sr.Rd:</strong> Auxiliary R object needed to run the vignette.</p>
+
+      <p><strong>4) DoIntegPIN.R:</strong> R function to integrate a PPI network with a gene expression matrix and extract the maximally connected subnetwork.</p>
+
+      <p><strong>5) CompSR.R:</strong> R function to compute the entropy rate (plus auxiliary functions).</p>
+
+      <p><strong>6) CompSRana.R:</strong> R function to compute the entropy rate analytically assuming <em>detailed balance</em> (faster computation).</p>
+
+      <p><strong>7) <a href="{{ '/images/SignalEntropy/intro.pdf' | relative_url }}">PDF</a></strong>: Vignette / manual.</p>
+
+    </div>
+  </div>
+</div>
+
 <div class="bigspacer"></div>
-<center>
-<div class="title">
-Biology
-</div>
-</center>
 <div class="bigspacer"></div>
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-</div>
- -->
-
-	
-	</div>
-		
-	<div id="footer"><span style="display:none">foo</span></div>
-	    		
-	<!-- MathJax support -->
-	<script type="text/javascript"
-	 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<!-- MathJax config -->
-	<script src="/js/mathjax.config.js"></script>	
-			
-</body>
-</html>
-

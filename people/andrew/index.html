@@ -1,202 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Teschendorff Lab / people / andrew
+categories:
+  - people
+permalink: /people/andrew/
+---
 
-<head>
-	<meta charset="utf-8"/>
-	<title>Teschendorff Lab</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!-- Customized Bootstrap + Font Awesome + Solarized -->
-    <link href="/css/style.css" rel="stylesheet" media="screen">
+<div class="container people-page">
+  <div class="bigspacer"></div>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/icon.jpg"/>	
-			
-	<!-- Google Analytics -->	
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- Unified width wrapper -->
+  <div class="content-wrap">
 
-		ga('create', 'UA-58618307-1', 'aeteschendorff-lab.github.io');
-		ga('send', 'pageview');
+    <!-- Header card -->
+    <div class="member-header">
+      <div class="member-photo-andrew">
+        <img src="{{ '/people/images/team/Andrew.jpg' | relative_url }}" alt="Andrew E. Teschendorff">
+      </div>
 
-	</script>
-			
-</head>
+      <div class="member-meta">
+        <div class="member-name">Andrew E. Teschendorff</div>
+        <div class="member-role">Principal Investigator</div>
 
-<body>
-	
-	<div id="header">
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
-			<div class="container">	
-				
-				<div class="navbar-header">
-					<object class="pull-left logo" data="/images/icon.jpg"></object>
-					<a class="navbar-brand" href="/">Teschendorff Lab</a>
-				</div>
-				
-				<ul class="nav navbar-nav navbar-right">
-                    <!--
-                    <li>
-                    
-                    <a href="/blog/">blog</a>
-                    </li> -->
-					
-					<li>
-					
-					<a href="/papers/">papers</a></li>
-					
-					<li>
-					
-					<a href="/software/">software</a></li>	  
-					
-					<li class="active">
-					
-					<a href="/people/">people</a></li>	  	  
-	           <li><a href="/">Projects</a></li>			</ul>
-			</div>
-		</nav>	
-	</div>
-	
-	<div class="container">	
-		
-	
+        <!-- Links row under role -->
+        <div class="member-links" aria-label="Andrew links">
+          <!-- X -->
+          <a class="meta-link" href="https://x.com/aeteschendorff" target="_blank" rel="noopener">
+            <span class="x-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" style="vertical-align:-2px;">
+                <path d="M18.9 2H22l-6.8 7.8L23 22h-6.6l-5.2-6.8L5.5 22H2.4l7.3-8.4L1 2h6.7l4.7 6.2L18.9 2Zm-1.2 18h1.7L6.2 3.9H4.4L17.7 20Z"></path>
+              </svg>
+            </span>
+            <span class="meta-label">X</span>
+          </a>
 
-<div class="bigspacer"></div>
+          <!-- Google Scholar (SVG icon) -->
+          <a class="meta-link" href="https://scholar.google.com/citations?user=w2YDjVwAAAAJ&hl=en&oi=ao/" target="_blank" rel="noopener">
+            <span class="scholar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" style="vertical-align:-2px;">
+                <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 9.73L4.42 9 12 5.27 19.58 9 12 12.73zM6 12.5V16c0 1.66 2.69 3 6 3s6-1.34 6-3v-3.5l-6 3.27-6-3.27z"></path>
+              </svg>
+            </span>
+            <span class="meta-label">Google Scholar</span>
+          </a>
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="media">
-			
-			<img class="pull-left pad-right media-object" width=120 src="/people/images/team/Andrew.jpg">
-			
-			<div class="media-body">
-				<div class="bigtitle media-heading">
-					Andrew E Teschendorff
-				</div>
-				<p>
-				<div class="smallhead">
-					Principal Investigator
-				</div>
-			</div>
-		</div>
-	</div>				
+          <!-- GitHub -->
+          <a class="meta-link" href="https://github.com/aet21" target="_blank" rel="noopener">
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+            <span class="meta-label">GitHub</span>
+          </a>
+
+          <!-- Email (show address) -->
+          <a class="meta-link" href="mailto:andrew@sinh.ac.cn">
+            <i class="fa fa-inbox" aria-hidden="true"></i>
+            <span class="meta-label">Email</span>
+            <span class="meta-email">andrew@sinh.ac.cn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bigspacer"></div>
+
+    <!-- Main body: start from the left edge (no empty left column) -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="post">
+
+          <div class="section-title">Research Area</div>
+          <p class="area-line">
+            <strong>Cancer System-omics / Statistical Cancer Genomics / Epigenomics / Network Physics</strong>
+          </p>
+
+          <div class="smallspacer"></div>
+          <p>
+            In our lab we are developing and applying novel advanced statistical methods, drawn from diverse
+            areas such as graph theory, network physics, machine learning and signal processing, to help tackle
+            some of the outstanding challenges in cancer genomics and epigenomics.
+          </p>
+
+          <div class="smallspacer"></div>
+          <p>
+            We are particularly interested in using the language of <strong>networks and statistical mechanics</strong>
+            to help elucidate the systems biology principles underlying normal cellular differentiation and how this
+            process is altered in complex diseases such as cancer. We are developing a framework based on statistical
+            mechanics and network theory, in order to help identify the key signaling pathways and nodes in
+            differentiation, cancer and drug resistance.
+          </p>
+
+          <div class="smallspacer"></div>
+          <p>
+            Another application of networks and graph theory is to the integrative analysis of large-scale
+            multi-dimensional omic data sets. For instance, we have recently used interactome and regulatory networks
+            to integrate epigenetic and gene expression data together, to identify functional epigenetic drivers in
+            cancer and ageing. We are continuing to explore and develop such <strong>"Systems Epigenomics"</strong>
+            approaches.
+          </p>
+
+          <div class="smallspacer"></div>
+          <p>
+            We are also involved in numerous more <strong>data-driven projects</strong>, in close collaboration with
+            clinicians and biologists. One key area of interest is in cancer risk prediction and early detection: we are
+            involved in the analysis of DNA methylation data from large prospective studies in order to assess if DNA
+            methylation marks measured years in advance of disease diagnosis can predict the risk of disease. Another
+            area of interest is in refining the molecular taxonomy of cancers, using perturbation molecular signature
+            approaches to identify novel prognostic and predictive cancer subtypes.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content-wrap -->
 </div>
 
-<div class="bigspacer"></div>
+<style>
+  .x-icon svg { fill: currentColor; }
+  .scholar-icon svg { fill: currentColor; }
 
-<div class="row">
-	<div class="col-md-3">  	
-				
-				
-		<div class="smallhead">
-			CV
-		</div>	
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-file-text-o fa-fw"></i>			
-			<a class="off" href="/pdfs/team/andrew-teschendorff-cv.pdf">andrew-teschendorff-cv.pdf</a>
-		</div>		
-		<div class="bigspacer"></div>		
-			  		
-				
-		<div class="smallhead">
-			Twitter
-		</div>	
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-twitter fa-fw"></i>
-			<a class="off" href="https://twitter.com/">Andrew E. Teschendorff</a>
-		</div>		
-		<div class="bigspacer"></div>				
-			
-			
-		
-		<div class="smallhead">
-			GitHub
-		</div>	
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-github-alt fa-fw"></i>
-			<a class="off" href="https://github.com/aet21">teschendorff</a>
-		</div>		
-		<div class="bigspacer"></div>	
-				
-		
-		<div class="smallhead">
-			Google Scholar
-		</div>	
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-book fa-fw"></i>
-			<a class="off" href="https://scholar.google.com/citations?user=w2YDjVwAAAAJ&hl=en&oi=ao/">Andrew E. Teschendorff</a>
-		</div>		
-		<div class="bigspacer"></div>	
-						   	
-		
-		
-		<div class="smallhead">
-			Email
-		</div>	
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-inbox fa-fw"></i>
-			andrew<span style="display:none"></span>@picb.ac.cn
-		</div>		
-		<div class="bigspacer"></div>			
-								
-	</div>
-	<div class="col-md-8">	
-		<div class="post">
-			<p>Research Area:<br>
-				<div class="bigspacer"></div><div class="bigspacer"></div>
-				
-				
-<strong>Cancer System-omics / Statistical Cancer Genomics / Epigenomics / Network Physics</strong></p>
+  /* Same width for header + body */
+  .content-wrap{
+    max-width: 950px;
+    margin: 0 auto;
+  }
 
-<div class="bigspacer"></div>
-<p>
-In our lab we are developing and applying novel advanced statistical methods, drawn from diverse areas such as graph theory, network physics, machine learning and signal processing, to help tackle some of the outstanding challenges in cancer genomics and epigenomics. 
-</p>
-<div class="bigspacer"></div>
-<p>
-We are particularly interested in using the language of <strong>networks and statistical mechanics</strong> to help elucidate the systems biology principles underlying normal cellular differentiation and how this process is altered in complex diseases such as cancer. We are developing a framework based on statistical mechanics and network theory, in order to help identify the key signaling pathways and nodes in differentiation, cancer and drug resistance. 
+  /* Link row under role */
+  .member-links{
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
 
-</p>
-<div class="bigspacer"></div>
-<p>
+  .meta-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.9;
+    padding: 2px 6px;
+    border-radius: 6px;
+  }
 
-Another application of networks and graph theory is to the integrative analysis of large-scale multi-dimensional omic data sets. For instance, we have recently used interactome and regulatory networks to integrate epigenetic and gene expression data together, to identify functional epigenetic drivers in cancer and ageing. We are continuing to explore and develop such <strong>"Systems Epigenomics"</strong> approaches. 
+  .meta-link:hover{
+    opacity: 1;
+    text-decoration: none;
+  }
 
-</p>
-<div class="bigspacer"></div>
-<p>
-We are also involved in numerous more <strong>data-driven projects</strong>, in close collaboration with clinicians and biologists. One key area of interest is in cancer risk prediction and early detection: we are involved in the analysis of DNA methylation data from large prospective studies in order to assess if DNA methylation marks measured years in advance of disease diagnosis can predict the risk of disease. Another area of interest is in refining the molecular taxonomy of cancers, using perturbation molecular signature approaches to identify novel prognostic and predictive cancer subtypes.
+  .meta-link i{
+    font-size: 14px;
+    line-height: 1;
+  }
 
----</p>
+  .meta-label{
+    font-weight: 600;
+  }
 
-
-		</div>
-		
-		
-		
-
-		
-	<div class="col-md-1"></div>
-</div>	
-
-	
-	</div>
-		
-	<div id="footer"><span style="display:none">foo</span></div>
-	    		
-	<!-- MathJax support -->
-	<script type="text/javascript"
-	 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<!-- MathJax config -->
-	<script src="/js/mathjax.config.js"></script>	
-			
-</body>
-</html>
+  .meta-email{
+    font-weight: 400;
+    opacity: 0.9;
+  }
+</style>

@@ -15,3 +15,5 @@ collections:
     output: true
   projects:
     output: true
+  software:
+    output: true

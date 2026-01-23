@@ -1,242 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Teschendorff Lab / software
+categories:
+ - software
+---
 
-<head>
-  <meta charset="utf-8"/>
-  <title>Teschendorff lab / projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!-- Customized Bootstrap + Font Awesome + Solarized -->
-    <link href="/css/style.css" rel="stylesheet" media="screen">
+<div class="container-fluid software-page">
+  <div class="software-wrap" style="max-width: 950px">
+    <div class="bigspacer"></div>
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/images/icon.jpg"/> 
-      
-  <!-- Google Analytics --> 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    {% for sw in site.data.software %}
+      <div class="bigspacer"></div>
 
-    ga('create', 'UA-58618307-1', 'aeteschendorff-lab.github.io');
-    ga('send', 'pageview');
-
-  </script>
-      
-</head>
-
-<body>
-  
-  <div id="header">
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">  
-      <div class="container"> 
-        
-        <div class="navbar-header">
-          <object class="pull-left logo" data="/images/icon.jpg" ></object>
-          <a class="navbar-brand" href="/">Teschendorff Lab</a>
-        </div>
-        
-        <ul class="nav navbar-nav navbar-right">
-                    <!-- 
-                    <li>
-                    
-                    <a href="/blog/">blog</a>
-                    </li> -->
-          
-          <li>
-          
-          <a href="/papers/">Papers</a></li>
-          
-          <li class="active">
-          
-          <a href="/software/">Software</a></li>    
-          
-          <li>
-          
-          <a href="/people/">People</a></li>
-                  
-             <li><a href="/projects/">Projects</a></li>      </ul>
+      <div class="bs-callout bs-callout-danger software-callout">
+        <a class="off sw-line" href="/software/{{ sw.slug }}">
+          <span class="sw-idx" aria-hidden="true"></span>
+          <span class="sw-title">{{ sw.title }}</span>
+        </a>
       </div>
-    </nav>  
+       <div class="bigspacer"></div>
+    {% endfor %}
   </div>
-  
-  <div class="container"> 
-    
-  <div class="container" style="max-width: 950px">
-
-
-    
-    <p class="lead">
 </div>
 
-<div class="container">
+<style>
+/* 更靠左：去 padding */
+.software-page{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
-    <div class="bigspacer"></div><div class="bs-callout bs-callout-danger" >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/epidish"><h4>EpiDISH (Epigenetic Dissection of Intra Sample Heterogeneity)</h4> </a>
-          </div><!-- /.col-lg-4 -->
-    
-        </div><!-- /.row -->
+.sw-title{
+  font-size: 22px;   /* 你想多大就改这里，比如 16/18/20 */
+  font-weight: 500;  /* 可选：更醒目 */
+  line-height: 1.35;
+}
+.software-wrap{
+  max-width: 950px;
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
-  </div>
+.software-callout{
+  padding-left: 0 !important;
+  padding-right: 12px;
+  margin-left: 0 !important;
+}
 
-     <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/SEPIRA"><h4>SEPIRA (Systems EPigenomics Inference of Regulatory Activity) </h4></a>
+.sw-line{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
 
-          </div><!-- /.col-lg-4 -->
-        
-        </div>
-  </div>
+.sw-idx{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
 
+  min-width: 8px;
+  max-width: 8px;
+  min-height: 8px;
+  max-height: 8px;
 
-  <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/LandSCENT"><h4>LandSCENT (Landscape Single Cell Entropy) </h4></a>
+  border-radius: 50%;
+  background: currentColor;
 
-          </div><!-- /.col-lg-4 -->
-        
-        </div>
-  </div>
+  flex: 0 0 auto;      /* 不允许 flex 拉伸 */
+  line-height: 0;      /* 避免行高影响 */
+  box-sizing: content-box;
+}
 
+/* hover 可选更深灰 */
+a.sw-line:hover{
+  color: #333;
+  text-decoration: none;
+}
 
- <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/ChAMP"><h4>ChAMP (The Chip Analysis Methylation Pipeline)</h4></a>
-          </div><!-- /.col-lg-4 -->
-    
-        </div><!-- /.row -->
-
-  </div>
-
-         <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/FEM"><h4>FEM (Functional Epigenetic Modules) algorithm</h4></a>
-          </div><!-- /.col-lg-4 -->
-    
-        </div><!-- /.row -->
-
-  </div>
-
-   <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/BMIQ"><h4>BMIQ (Beta MIxture Quantile dilation) algorithm</h4></a>
-           </div><!-- /.col-lg-4 -->
-    
-        </div><!-- /.row -->
-
-  </div>
-            
-            
-             <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/ISVA"><h4>ISVA (Independent Surrogate Variable Analysis)  algorithm</h4></a>
-          </div><!-- /.col-lg-4 -->
-    
-        </div><!-- /.row -->
-
-  </div> 
-
-            
-            
-            
-     <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/DART"><h4>DART (Denoising Algorithm using Relevance network Topology) algorithm</h4></a>
-          </div><!-- /.col-lg-4 -->
-    
-        </div><!-- /.row -->
-
-  </div>
-
-
-
-  <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/tensorICA"><h4>tensorICA (Tensorial Independent Component Analysis)</h4></a>
-
-          </div><!-- /.col-lg-4 -->
-        
-        </div><!-- /.row -->
-  </div>
-            
-            
-             <div class="bigspacer"></div><div class="bs-callout bs-callout-danger"  >    
-       <div class="row">
-          <div class="col-lg-7" style="display: table-cell;vertical-align:middle;">
-              <a class="off" href="/software/SignalEntropy"><h4>Signalling Entropy</h4></a>
-          </div><!-- /.col-lg-4 -->
-    
-        </div><!-- /.row -->
-
-  </div>
-
-            
-</div>
-<!---------------------------------------end--------------------------------------->
-
-
-
-
-
-
-<!--
-<div class="bigspacer"></div>
-<center>
-<div class="title">
-Biology
-</div>
-</center>
-<div class="bigspacer"></div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-</div>
- -->
-
-  
-  </div>
-    
-  <div id="footer"><span style="display:none">foo</span></div>
-          
-  <!-- MathJax support -->
-  <script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <!-- MathJax config -->
-  <script src="/js/mathjax.config.js"></script> 
-      
-</body>
-</html>
-
+</style>

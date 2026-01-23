@@ -1,0 +1,29 @@
+- slug: epidish
+  title: "EpiDISH (Epigenetic Dissection of Intra Sample Heterogeneity)"
+
+- slug: SEPIRA
+  title: "SEPIRA (Systems EPigenomics Inference of Regulatory Activity)"
+
+- slug: LandSCENT
+  title: "LandSCENT (Landscape Single Cell Entropy)"
+
+- slug: ChAMP
+  title: "ChAMP (The Chip Analysis Methylation Pipeline)"
+
+- slug: FEM
+  title: "FEM (Functional Epigenetic Modules) algorithm"
+
+- slug: BMIQ
+  title: "BMIQ (Beta MIxture Quantile dilation) algorithm"
+
+- slug: ISVA
+  title: "ISVA (Independent Surrogate Variable Analysis) algorithm"
+
+- slug: DART
+  title: "DART (Denoising Algorithm using Relevance network Topology) algorithm"
+
+- slug: tensorICA
+  title: "tensorICA (Tensorial Independent Component Analysis)"
+
+- slug: SignalEntropy
+  title: "Signalling Entropy"
