@@ -6422,6 +6422,7 @@ html, body {
   text-shadow: 0 0 0 #000, 0.25px 0 #000;
 }
 
+<<<<<<< HEAD
 .projectbox{
   text-align: center;          /* 标题等居中 */
 }
@@ -6566,3 +6567,5 @@ html, body {
   line-height: 0;      /* 避免行高影响 */
   box-sizing: content-box;
 }
+=======
+>>>>>>> 58a8021 (Update paper page)

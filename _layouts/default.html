@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
+<<<<<<< HEAD
     body{
       font-family: "Nunito Sans", sans-serif;
       font-weight: 600;
@@ -84,10 +85,37 @@
       s.parentNode.insertBefore(tk,s);
     })(document);
   </script>
+=======
+    body { font-weight: 600; }
+  </style>
+  <!-- CSS -->
+  <link href="{{ '/css/style.css' | relative_url }}" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="/images/icon.jpg"/>
+  <!-- Typekit -->
+    <script>
+      (function(d) {
+        var config = { kitId: 'xeu8jut', scriptTimeout: 3000 },
+            h=d.documentElement,
+            t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),
+            tk=d.createElement("script"), f=false, s=d.getElementsByTagName("script")[0], a;
+        h.className+=" wf-loading";
+        tk.src='//use.typekit.net/'+config.kitId+'.js';
+        tk.async=true;
+        tk.onload=tk.onreadystatechange=function(){
+          a=this.readyState;
+          if(f||a&&a!="complete"&&a!="loaded")return;
+          f=true; clearTimeout(t);
+          try{Typekit.load(config)}catch(e){}
+        };
+        s.parentNode.insertBefore(tk,s);
+      })(document);
+    </script>
+>>>>>>> 58a8021 (Update paper page)
 </head>
 
 <body>
 
+<<<<<<< HEAD
   {% assign cat0 = page.categories | first %}
 
   <!-- Header / Navbar -->
@@ -97,11 +125,18 @@
 
         <!-- ✅ 首页不显示 brand -->
         {% unless cat0 == 'home' or page.url == '/' %}
+=======
+  <!-- Header / Navbar (Bootstrap-3 style like your reference) -->
+  <div id="header">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+>>>>>>> 58a8021 (Update paper page)
         <div class="navbar-header">
           <a class="navbar-brand" href="{{ '/' | relative_url }}">
             <img src="{{ '/icon.jpg' | relative_url }}" alt="Lab icon" class="navbar-brand-icon">
             <span class="brand-text">Teschendorff Lab</span>
           </a>
+<<<<<<< HEAD
         </div>
         {% endunless %}
 
@@ -117,6 +152,28 @@
           </li>
           <li class="{% if cat0 == 'projects' %}active{% endif %}">
             <a href="{{ '/projects/' | relative_url }}">Projects</a>
+=======
+		</div>
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="{% if page.categories.first == 'papers' %}active{% endif %}">
+            <a href="{{ '/papers/' | relative_url }}">Papers</a>
+          </li>
+
+          <li class="{% if page.categories.first == 'software' %}active{% endif %}">
+            <a href="{{ '/software/' | relative_url }}">Software</a>
+          </li>
+
+          <li class="{% if page.categories.first == 'people' %}active{% endif %}">
+            <a href="{{ '/people/' | relative_url }}">People</a>
+          </li>
+
+          <li class="{% if page.categories.first == 'projects' %}active{% endif %}">
+            <a href="{{ '/' | relative_url }}">Projects</a>
+          </li>
+          
+>>>>>>> 58a8021 (Update paper page)
           </li>
         </ul>
 
@@ -124,6 +181,7 @@
     </nav>
   </div>
 
+<<<<<<< HEAD
   <!-- Hero Banner (ONLY home) -->
   {% if cat0 == 'home' or page.url == '/' %}
   <div class="container">
@@ -135,10 +193,28 @@
         </div>
       </div>
     </div>
+=======
+  <!-- Big logo/title block (like the reference) - shown only on home page -->
+  {% if page.categories.first == 'home' or page.url == '/' %}
+  <div class="container">
+    <div class="bigspacer"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <object class="pull-left biglogo" data="{{ '/images/icon.jpg' | relative_url }}"></object>
+        <div class="bigtitle logobox" style="display:table-cell; vertical-align:middle">
+          Teschendorff Lab
+        </div>
+      </div>
+    </div>
+
+    <div class="hugespacer"></div>
+>>>>>>> 58a8021 (Update paper page)
   </div>
   {% endif %}
 
   <!-- Page content -->
+<<<<<<< HEAD
   {% if cat0 == 'home' or page.url == '/' %}
     <div class="container">
       {{ content }}
@@ -158,5 +234,13 @@
   <script src="{{ '/js/mathjax.config.js' | relative_url }}"></script>
   {% endif %}
 
+=======
+  <div class="container mt-4">
+    {{ content }}
+  </div>
+
+  <div id="footer"><span style="display:none">foo</span></div>
+
+>>>>>>> 58a8021 (Update paper page)
 </body>
 </html>
