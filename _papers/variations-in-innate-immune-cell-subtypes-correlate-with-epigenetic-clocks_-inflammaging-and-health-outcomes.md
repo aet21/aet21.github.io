@@ -2,11 +2,7 @@
 title: "Variations in Innate Immune Cell Subtypes Correlate with Epigenetic Clocks, Inflammaging and Health Outcomes"
 categories:
   - papers
-<<<<<<< HEAD
-authors: "Xiaolong Guo, Josephine A. Robertson, Andrea Aparicio, Kirsten Seale, Qingwen Chen, Anne Richmond, Zhaozhen Du, Mahnoor Sulaiman, Shijie C Zheng, Esteban Ballestar, Charlotte AM Cecil, Bastiaan T Heijmans, Steve Horvath, Varun B. Dwaraka, Jessica Lasky‚ÄêSu, Ryan Smith, Riccardo E. Marioni, Andrew E Teschendorff"
-=======
 authors: "Xiaolong Guo, Josephine A. Robertson, Andrea Aparicio, Kirsten Seale, Qingwen Chen, Anne Richmond, Zhaozhen Du, Mahnoor Sulaiman, Shijie C Zheng, Esteban Ballestar, Charlotte AM Cecil, Bastiaan T Heijmans, Steve Horvath, Varun B. Dwaraka, Jessica Lasky-Su, Ryan Smith, Riccardo E. Marioni, Andrew E Teschendorff"
->>>>>>> 58a8021 (Update paper page)
 year: 2025
 month: August
 journal: "Advanced Science"

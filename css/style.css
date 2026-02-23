@@ -6422,7 +6422,6 @@ html, body {
   text-shadow: 0 0 0 #000, 0.25px 0 #000;
 }
 
-<<<<<<< HEAD
 .projectbox{
   text-align: center;          /* 标题等居中 */
 }
@@ -6567,5 +6566,77 @@ html, body {
   line-height: 0;      /* 避免行高影响 */
   box-sizing: content-box;
 }
-=======
->>>>>>> 58a8021 (Update paper page)
+.software-btn {
+  display: inline-block;
+  text-align: center;
+  width: 140px;   /* 手动挑一个刚好能放下最长英文的宽度 */
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+/* 外层容器：控制统一的显示尺寸 + 白色背景 */
+/* 每个 software 的容器卡片 */
+.software-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Active / Legacy 整块的透明度 */
+.software-section-active {
+  opacity: 1;
+}
+
+.software-section-legacy {
+  opacity: 0.6;   /* 半透明，可根据喜好改成 0.7 / 0.8 */
+}
+
+/* wholeName 靠右 */
+.subhead.text-right {
+  text-align: right;
+}
+
+/* 图片统一尺寸的容器 */
+.software-img-wrapper {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin: 1em auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.software-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+/* 按钮统一样式（可选） */
+.software-btn {
+  display: inline-block;
+  text-align: center;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* wholeName 大标题 */
+.software-abbr {
+  font-size: 1.3em;     /* 比正文略大 */
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+/* abbreviation 小一点、可以次要一点 */
+.software-title {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 0.6em;
+}

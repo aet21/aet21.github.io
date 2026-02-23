@@ -13,10 +13,7 @@ collections:
     output: true
   papers:
     output: true
-<<<<<<< HEAD
   projects:
     output: true
   software:
     output: true
-=======
->>>>>>> 58a8021 (Update paper page)
