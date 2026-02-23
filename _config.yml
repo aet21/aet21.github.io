@@ -1,11 +1,10 @@
 url: "https://aet21.github.io"
-#baseurl: "/aet21.github.io" 
+# baseurl: "/aet21.github.io"
 baseurl: ""
 
-repository: aet21/aet21.github.io
+repository: "aet21/aet21.github.io"
 
 plugins:
-  # - jekyll-gzip
   - jekyll-github-metadata
 
 collections:
