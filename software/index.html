@@ -15,7 +15,8 @@ categories:
 <!-- ============================ -->
 <div class="bigspacer"></div>
 <hr class="year-divider" />
-{% if active_sw and active_sw.size > 0 %}
+
+{% if active_sw.size > 0 %}
   <div class="software-section software-section-active">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -24,65 +25,70 @@ categories:
     </div>
     <div class="bigspacer"></div>
 
-    {% for sw in active_sw %}
-      <div class="row">
-        <div class="col-md-12">
-          <div class="software-card">
-            <div class="row">
+    {% assign desired_order = "EpiDISH|EpiSCORE|EpiMitClocks|SCENT|CancerStemID|SCIRA|ebGSEA|ELVAR|DICE" | split:"|" %}
 
-              <!-- 左侧文字 1/2 宽度 -->
-              <div class="col-md-6">
-                <!-- abbreviation  -->
-                <div class="software-abbr">
-                  {{ sw.abbreviation }}
-                </div>
-                <!-- wholeName  -->
-                <div class="software-title">
-                  {{ sw.wholeName }}
-                </div>
-                
+    {% for abbr in desired_order %}
+      {% for sw in active_sw %}
+        {% if sw.abbreviation == abbr %}
+          <div class="row">
+            <div class="col-md-12">
+              <div class="software-card">
+                <div class="row">
 
-                <div class="note">
-                  {{ sw.simpleIntroduction | markdownify }}
-                </div>
+                  <!-- 左侧文字 1/2 宽度 -->
+                  <div class="col-md-6">
+                    <!-- abbreviation -->
+                    <div class="software-abbr">
+                      {{ sw.abbreviation }}
+                    </div>
+                    <!-- wholeName -->
+                    <div class="software-title">
+                      {{ sw.wholeName }}
+                    </div>
 
-                <div class="bigspacer"></div>
+                    <div class="note">
+                      {{ sw.simpleIntroduction | markdownify }}
+                    </div>
 
-                {% if sw.link1 %}
-                  <a class="btn btn-default btn-sm software-btn"
-                     href="{{ sw.link1 }}"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                    {{ sw.link1Site }}
-                  </a>
-                {% endif %}
+                    <div class="bigspacer"></div>
 
-                {% if sw.link2 and sw.link2 != "" %}
-                  <a class="btn btn-default btn-sm software-btn"
-                     href="{{ sw.link2 }}"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                    {{ sw.link2Site }}
-                  </a>
-                {% endif %}
-              </div>
+                    {% if sw.link1 %}
+                      <a class="btn btn-default btn-sm software-btn"
+                         href="{{ sw.link1 }}"
+                         target="_blank"
+                         rel="noopener noreferrer">
+                        {{ sw.link1Site }}
+                      </a>
+                    {% endif %}
 
-              <!-- 右侧图片 1/2 宽度 -->
-              <div class="col-md-6 text-center">
-                {% if sw.image %}
-                  <div class="software-img-wrapper">
-                    <img
-                      src="{{ sw.image | relative_url }}"
-                      alt="{{ sw.abbreviation }}"
-                      class="software-img">
+                    {% if sw.link2 and sw.link2 != "" %}
+                      <a class="btn btn-default btn-sm software-btn"
+                         href="{{ sw.link2 }}"
+                         target="_blank"
+                         rel="noopener noreferrer">
+                        {{ sw.link2Site }}
+                      </a>
+                    {% endif %}
                   </div>
-                {% endif %}
-              </div>
 
+                  <!-- 右侧图片 1/2 宽度 -->
+                  <div class="col-md-6 text-center">
+                    {% if sw.image %}
+                      <div class="software-img-wrapper">
+                        <img
+                          src="{{ sw.image | relative_url }}"
+                          alt="{{ sw.abbreviation }}"
+                          class="software-img">
+                      </div>
+                    {% endif %}
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
 
     <!-- ✅ Active Software 区块结束后再放分隔线 -->
@@ -94,7 +100,7 @@ categories:
 <!-- ============================ -->
 <!-- LEGACY SOFTWARE (下面一栏) -->
 <!-- ============================ -->
-{% if legacy_sw and legacy_sw.size > 0 %}
+{% if legacy_sw.size > 0 %}
   <div class="bigspacer"></div>
 
   <div class="software-section software-section-legacy">
@@ -105,64 +111,134 @@ categories:
     </div>
     <div class="bigspacer"></div>
 
+    {%- comment -%}
+      第一个循环：只显示 iEVORA，让它排在最前面
+    {%- endcomment -%}
     {% for sw in legacy_sw %}
-      <div class="row">
-        <div class="col-md-12">
-          <div class="software-card">
-            <div class="row">
+      {% if sw.abbreviation == "iEVORA" %}
+        <div class="row">
+          <div class="col-md-12">
+            <div class="software-card">
+              <div class="row">
 
-              <!-- 左侧文字 1/2 宽度 -->
-              <div class="col-md-6">
-               <!-- abbreviation  -->
-                <div class="software-abbr">
-                  {{ sw.abbreviation }}
-                </div>
-                <!-- wholeName  -->
-                <div class="software-title">
-                  {{ sw.wholeName }}
-                </div>
-
-                <div class="note">
-                  {{ sw.simpleIntroduction | markdownify }}
-                </div>
-
-                <div class="bigspacer"></div>
-
-                {% if sw.link1 %}
-                  <a class="btn btn-default btn-sm software-btn"
-                     href="{{ sw.link1 }}"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                    {{ sw.link1Site }}
-                  </a>
-                {% endif %}
-
-                {% if sw.link2 and sw.link2 != "" %}
-                  <a class="btn btn-default btn-sm software-btn"
-                     href="{{ sw.link2 }}"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                    {{ sw.link2Site }}
-                  </a>
-                {% endif %}
-              </div>
-
-              <!-- 右侧图片 1/2 宽度 -->
-              <div class="col-md-6 text-center">
-                {% if sw.image %}
-                  <div class="software-img-wrapper">
-                    <img
-                      src="{{ sw.image | relative_url }}"
-                      alt="{{ sw.abbreviation }}"
-                      class="software-img">
+                <!-- 左侧文字 1/2 宽度 -->
+                <div class="col-md-6">
+                  <!-- abbreviation -->
+                  <div class="software-abbr">
+                    {{ sw.abbreviation }}
                   </div>
-                {% endif %}
-              </div>
+                  <!-- wholeName -->
+                  <div class="software-title">
+                    {{ sw.wholeName }}
+                  </div>
 
+                  <div class="note">
+                    {{ sw.simpleIntroduction | markdownify }}
+                  </div>
+
+                  <div class="bigspacer"></div>
+
+                  {% if sw.link1 %}
+                    <a class="btn btn-default btn-sm software-btn"
+                       href="{{ sw.link1 }}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                      {{ sw.link1Site }}
+                    </a>
+                  {% endif %}
+
+                  {% if sw.link2 and sw.link2 != "" %}
+                    <a class="btn btn-default btn-sm software-btn"
+                       href="{{ sw.link2 }}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                      {{ sw.link2Site }}
+                    </a>
+                  {% endif %}
+                </div>
+
+                <!-- 右侧图片 1/2 宽度 -->
+                <div class="col-md-6 text-center">
+                  {% if sw.image %}
+                    <div class="software-img-wrapper">
+                      <img
+                        src="{{ sw.image | relative_url }}"
+                        alt="{{ sw.abbreviation }}"
+                        class="software-img">
+                    </div>
+                  {% endif %}
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      {% endif %}
+    {% endfor %}
+
+    {%- comment -%}
+      第二个循环：渲染除 iEVORA 外的所有 Legacy 软件，顺序不做特殊要求
+    {%- endcomment -%}
+    {% for sw in legacy_sw %}
+      {% if sw.abbreviation != "iEVORA" %}
+        <div class="row">
+          <div class="col-md-12">
+            <div class="software-card">
+              <div class="row">
+
+                <!-- 左侧文字 1/2 宽度 -->
+                <div class="col-md-6">
+                  <!-- abbreviation -->
+                  <div class="software-abbr">
+                    {{ sw.abbreviation }}
+                  </div>
+                  <!-- wholeName -->
+                  <div class="software-title">
+                    {{ sw.wholeName }}
+                  </div>
+
+                  <div class="note">
+                    {{ sw.simpleIntroduction | markdownify }}
+                  </div>
+
+                  <div class="bigspacer"></div>
+
+                  {% if sw.link1 %}
+                    <a class="btn btn-default btn-sm software-btn"
+                       href="{{ sw.link1 }}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                      {{ sw.link1Site }}
+                    </a>
+                  {% endif %}
+
+                  {% if sw.link2 and sw.link2 != "" %}
+                    <a class="btn btn-default btn-sm software-btn"
+                       href="{{ sw.link2 }}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                      {{ sw.link2Site }}
+                    </a>
+                  {% endif %}
+                </div>
+
+                <!-- 右侧图片 1/2 宽度 -->
+                <div class="col-md-6 text-center">
+                  {% if sw.image %}
+                    <div class="software-img-wrapper">
+                      <img
+                        src="{{ sw.image | relative_url }}"
+                        alt="{{ sw.abbreviation }}"
+                        class="software-img">
+                      </div>
+                  {% endif %}
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     {% endfor %}
 
     <!-- ✅ Legacy Software 区块结束后再放分隔线 -->

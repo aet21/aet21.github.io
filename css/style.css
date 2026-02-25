@@ -6569,7 +6569,7 @@ html, body {
 .software-btn {
   display: inline-block;
   text-align: center;
-  width: 140px;   /* 手动挑一个刚好能放下最长英文的宽度 */
+  width: 160px;   /* 手动挑一个刚好能放下最长英文的宽度 */
   margin-right: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -6619,13 +6619,6 @@ html, body {
   background-color: #ffffff;
 }
 
-/* 按钮统一样式（可选） */
-.software-btn {
-  display: inline-block;
-  text-align: center;
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
-}
 
 /* wholeName 大标题 */
 .software-abbr {

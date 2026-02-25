@@ -9,5 +9,5 @@ link1Site: "Github"
 link2: ""
 link2Site: ""
 image: "/software/software_images/scira.png"
-simpleIntroduction: "scira is an R-package aimed at estimating regulatory differentiation activity of transcription factors in scRNA-Seq data."
+simpleIntroduction: "SCIRA is an R-package aimed at estimating regulatory differentiation activity of transcription factors in scRNA-Seq data."
 ---
