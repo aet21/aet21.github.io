@@ -4,6 +4,6 @@ categories:
   - people
 position: Master Student
 image: /people/images/team/lurui.jpg
-alumni: FALSE
+alumni: TRUE
 role_key: 04_Ms
 ---
