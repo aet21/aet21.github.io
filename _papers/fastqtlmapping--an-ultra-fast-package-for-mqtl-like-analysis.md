@@ -5,6 +5,7 @@ categories:
 authors: "Xingjian Gao, Jiarui Li, Xinxuan Liu, Qianqian Peng, Han Jing, Sijia Wang, Fan Liu"
 year: 2021
 month: November
+date: 2021-11-01
 journal: "BMC Bioinformatics"
 paper_url: "https://doi.org/10.1101/2021.11.16.468610"
 image: "/papers/covers/BMC Bioinformatics.jpg"

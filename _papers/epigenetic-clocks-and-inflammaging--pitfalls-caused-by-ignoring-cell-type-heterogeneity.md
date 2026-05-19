@@ -5,6 +5,7 @@ categories:
 authors: "Xiaolong Guo, Andrew E. Teschendorff"
 year: 2025
 month: January
+date: 2025-01-01
 journal: "Geroscience"
 paper_url: "https://doi.org/10.1101/2025.01.21.634004"
 image: "/papers/covers/Geroscience.jpg"

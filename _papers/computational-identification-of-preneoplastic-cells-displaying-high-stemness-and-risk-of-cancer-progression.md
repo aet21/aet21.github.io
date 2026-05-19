@@ -5,6 +5,7 @@ categories:
 authors: "Tianyuan Liu, Xuan Zhao, Yuan Lin, Qi Luo, Shaosen Zhang, Yiyi Xi, Yamei Chen, Lin Lin, Wenyi Fan, Jie Yang, Yuling Ma, Alok K. Maity, Yanyi Huang, Jianbin Wang, Jiang Chang, Dongxin Lin, Andrew E. Teschendorff, Chen Wu"
 year: 2022
 month: July
+date: 2022-07-01
 journal: "Cancer Research"
 paper_url: "https://aacrjournals.org/cancerres/article-abstract/82/14/2520/706946/Computational-Identification-of-Preneoplastic?redirectedFrom=fulltext"
 image: "/papers/covers/Cancer Research.jpg"

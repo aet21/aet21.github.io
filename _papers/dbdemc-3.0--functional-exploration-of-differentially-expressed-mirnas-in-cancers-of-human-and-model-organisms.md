@@ -5,6 +5,7 @@ categories:
 authors: "Feng Xu, Yifan Wang, Yunchao Ling, Chenfen Zhou, Haizhou Wang, Andrew E Teschendorff, Yi Zhao, Haitao Zhao, Yungang He, Guoqing Zhang, Zhen Yang"
 year: 2022
 month: May
+date: 2022-05-01
 journal: "Genomics Proteomics Bioinformatics"
 paper_url: "https://academic.oup.com/gpb/article/20/3/446/7198180?login=false"
 image: "/papers/covers/Genomics, Proteomics & Bioinformatics.jpg"

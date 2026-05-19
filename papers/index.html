@@ -23,48 +23,10 @@ categories:
 
 <!-- Paper Section Below Google Scholar -->
 <div class="col-md-10">
-{% assign sorted_papers = site.papers | sort: 'year' | reverse %}
-
-{% assign final_sorted = "" | split: "" %}
-{% assign current_year = "" %}
-{% assign year_papers = "" | split: "" %}
-
-{% for paper in sorted_papers %}
-  {% if paper.year != current_year %}
-    {% unless current_year == "" %}
-      {% assign year_sorted = year_papers | sort: "month_num" | reverse %}
-      {% assign final_sorted = final_sorted | concat: year_sorted %}
-    {% endunless %}
-    
-    {% assign current_year = paper.year %}
-    {% assign year_papers = "" | split: "" %}
-  {% endif %}
-
-  {% case paper.month %}
-    {% when "January" %}{% assign mnum = 1 %}
-    {% when "February" %}{% assign mnum = 2 %}
-    {% when "March" %}{% assign mnum = 3 %}
-    {% when "April" %}{% assign mnum = 4 %}
-    {% when "May" %}{% assign mnum = 5 %}
-    {% when "June" %}{% assign mnum = 6 %}
-    {% when "July" %}{% assign mnum = 7 %}
-    {% when "August" %}{% assign mnum = 8 %}
-    {% when "September" %}{% assign mnum = 9 %}
-    {% when "October" %}{% assign mnum = 10 %}
-    {% when "November" %}{% assign mnum = 11 %}
-    {% when "December" %}{% assign mnum = 12 %}
-    {% else %}{% assign mnum = 0 %}
-  {% endcase %}
-
-  {% assign paper = paper | merge: { "month_num": mnum } %}
-  {% assign year_papers = year_papers | push: paper %}
-{% endfor %}
-
-{% assign year_sorted = year_papers | sort: "month_num" | reverse %}
-{% assign final_sorted = final_sorted | concat: year_sorted %}
+  {% assign sorted_papers = site.papers | sort: 'date' | reverse %}
 
   {% assign prev_year = "" %}
-  {% for paper in final_sorted %}
+  {% for paper in sorted_papers %}
     {% capture this_year %}{{ paper.year }}{% endcapture %}
 
     {% if this_year != prev_year %}
@@ -112,5 +74,8 @@ categories:
     </div>
 
   {% endfor %}
-  </div>
+
+  {% if prev_year != "" %}
+    </div>
+  {% endif %}
 </div>

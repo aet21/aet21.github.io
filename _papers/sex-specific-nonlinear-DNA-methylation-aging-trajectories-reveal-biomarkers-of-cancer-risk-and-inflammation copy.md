@@ -5,6 +5,7 @@ categories:
 authors: "Robin Grolaux, Macsue Jacques, Bernadette Jones-Freeman, Steve Horvath, Andrew E. Teschendorff, Nir Eynon"
 year: 2026
 month: February
+date: 2026-02-01
 journal: "Genome Biology"
 paper_url: "https://link.springer.com/article/10.1186/s13059-026-03952-z"
 image: "/papers/covers/Genome Biology.jpg"

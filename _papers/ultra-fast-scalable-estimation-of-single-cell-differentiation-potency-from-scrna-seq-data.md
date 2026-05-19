@@ -5,6 +5,7 @@ categories:
 authors: "Andrew E Teschendorff, Alok K Maity, Xue Hu, Chen Weiyan, Matthias Lechner"
 year: 2021
 month: June
+date: 2021-06-01
 journal: "Bioinformatics"
 paper_url: "https://doi.org/10.1093/bioinformatics/btaa987"
 image: "/papers/covers/Bioinformatics.jpg"

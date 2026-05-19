@@ -5,6 +5,7 @@ categories:
 authors: "Kirsten Seale, Andrew Teschendorff, Alexander P. Reiner, Sarah Voisin, Nir Eynon"
 year: 2024
 month: September
+date: 2024-09-01
 journal: "Genome Biology"
 paper_url: "https://doi.org/10.1186/s13059-024-03381-w"
 image: "/papers/covers/Genome Biology.jpg"

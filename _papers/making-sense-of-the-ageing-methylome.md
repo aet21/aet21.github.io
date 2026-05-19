@@ -5,6 +5,7 @@ categories:
 authors: "Kirsten Seale, Steve Horvath, Andrew Teschendorff, Nir Eynon, Sarah Voisin"
 year: 2022
 month: May
+date: 2022-05-01
 journal: "Nature Reviews Genetics"
 paper_url: "https://doi.org/10.1038/s41576-022-00477-6"
 image: "/papers/covers/Nature Reviews Genetics.jpg"

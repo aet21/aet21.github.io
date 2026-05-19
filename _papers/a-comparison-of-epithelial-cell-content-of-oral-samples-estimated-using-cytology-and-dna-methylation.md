@@ -5,6 +5,7 @@ categories:
 authors: "Yen Ting Wong, Michael A Tayeb, Timothy C. Stone, Laurence B. Lovat, Andrew E. Teschendorff, Rafal Iwasiow, Jeffrey M Craig"
 year: 2021
 month: July
+date: 2021-07-01
 journal: "Epigenetics"
 paper_url: "https://doi.org/10.1080/15592294.2021.1950977"
 image: "/papers/covers/Epigenetics.jpg"

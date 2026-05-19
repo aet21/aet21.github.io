@@ -5,6 +5,7 @@ categories:
 authors: "Wenran Li, Mingfeng Xia, Hailuan Zeng, Huandong Lin, Andrew E. Teschendorff, Xin Gao, Sijia Wang"
 year: 2024
 month: May
+date: 2024-05-01
 journal: "Clinical Epigenetics"
 paper_url: "https://doi.org/10.1186/s13148-024-01679-x"
 image: "/papers/covers/Clinical Epigenetics.jpg"
