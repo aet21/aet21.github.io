@@ -23,20 +23,56 @@ categories:
 
 <!-- Paper Section Below Google Scholar -->
 <div class="col-md-10">
-  {% assign sorted_papers = site.papers | sort: 'year' | reverse %}
+{% assign sorted_papers = site.papers | sort: 'year' | reverse %}
+
+{% assign final_sorted = "" | split: "" %}
+{% assign current_year = "" %}
+{% assign year_papers = "" | split: "" %}
+
+{% for paper in sorted_papers %}
+  {% if paper.year != current_year %}
+    {% unless current_year == "" %}
+      {% assign year_sorted = year_papers | sort: "month_num" | reverse %}
+      {% assign final_sorted = final_sorted | concat: year_sorted %}
+    {% endunless %}
+    
+    {% assign current_year = paper.year %}
+    {% assign year_papers = "" | split: "" %}
+  {% endif %}
+
+  {% case paper.month %}
+    {% when "January" %}{% assign mnum = 1 %}
+    {% when "February" %}{% assign mnum = 2 %}
+    {% when "March" %}{% assign mnum = 3 %}
+    {% when "April" %}{% assign mnum = 4 %}
+    {% when "May" %}{% assign mnum = 5 %}
+    {% when "June" %}{% assign mnum = 6 %}
+    {% when "July" %}{% assign mnum = 7 %}
+    {% when "August" %}{% assign mnum = 8 %}
+    {% when "September" %}{% assign mnum = 9 %}
+    {% when "October" %}{% assign mnum = 10 %}
+    {% when "November" %}{% assign mnum = 11 %}
+    {% when "December" %}{% assign mnum = 12 %}
+    {% else %}{% assign mnum = 0 %}
+  {% endcase %}
+
+  {% assign paper = paper | merge: { "month_num": mnum } %}
+  {% assign year_papers = year_papers | push: paper %}
+{% endfor %}
+
+{% assign year_sorted = year_papers | sort: "month_num" | reverse %}
+{% assign final_sorted = final_sorted | concat: year_sorted %}
 
   {% assign prev_year = "" %}
-  {% for paper in sorted_papers %}
+  {% for paper in final_sorted %}
     {% capture this_year %}{{ paper.year }}{% endcapture %}
 
     {% if this_year != prev_year %}
       {% if prev_year != "" %}
-        <!-- Close the previous year section -->
         </div>
       {% endif %}
       
       {% assign prev_year = this_year %}
-      <!-- Start a new row for a new year -->
       <div class="row">
         <div class="col-md-12">
           <h1>{{ this_year }}</h1>
@@ -46,10 +82,8 @@ categories:
       <div class="row">
     {% endif %}
 
-    <!-- Paper content for the current year -->
     <div class="col-lg-12 paperbox">
       <div class="media">
-        <!-- Image on the right with fixed aspect ratio and cropped from the center -->
         <div class="media-left">
           <a href="{{ paper.url }}">
             <img class="media-object paper-image" src="{{ site.baseurl }}{{ paper.image }}" alt="{{ paper.title }}">
@@ -58,7 +92,6 @@ categories:
         
         <div class="media-body">
           <div class="smallhead mb-1">
-            <!-- Paper title wrapped in a clickable link -->
             <a href="{{ paper.paper_url }}" target="_blank" class="off">
               {% if paper.Is_corresponding == "True" %}
                 <span class="paper-title paper-title--corresponding">{{ paper.title }}</span>
@@ -79,6 +112,5 @@ categories:
     </div>
 
   {% endfor %}
-
-  <!-- Close the last row -->
+  </div>
 </div>
