@@ -3,9 +3,9 @@ title: "Distance covariance entropy reveals primed states and bifurcation dynami
 categories:
   - papers
 authors: "Qi Luo, Alok K. Maity, Andrew E. Teschendorff"
-year: 2025
-month: March
-date: 2025-03-01
+year: 2022
+month: December 22, 
+date: 2022-12-22
 journal: "iScience"
 paper_url: "https://doi.org/10.1016/j.isci.2022.105709"
 image: "/papers/covers/iScience.jpg"
