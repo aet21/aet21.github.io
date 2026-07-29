@@ -1,13 +1,13 @@
 ---                     
-title: "A comparison of epithelial cell content of oral samples estimated using cytology and DNA methylation"
+title: "The OmniAge compendium of aging omic biomarkers links mitotic clocks to clonal hematopoiesis and causality"
 categories:
   - papers
-authors: "Yen Ting Wong, Michael A Tayeb, Timothy C. Stone, Laurence B. Lovat, Andrew E. Teschendorff, Rafal Iwasiow, Jeffrey M Craig"
-year: 2021
+authors: "Zhaozhen Du, Yunchao Ling, Huige Tong, Xiaolong Guo, Andrew E. Teschendorff"
+year: 2026
 month: July
-date: 2021-07-01
-journal: "Epigenetics"
-paper_url: "https://doi.org/10.1080/15592294.2021.1950977"
-image: "/papers/covers/Epigenetics.jpg"
-Is_corresponding: "False"
+date: 2026-07-28
+journal: "Nature Communications"
+paper_url: "https://www.nature.com/articles/s41467-026-76038-w"
+image: "/papers/covers/Nature Communications.jpg"
+Is_corresponding: "True"
 ---
