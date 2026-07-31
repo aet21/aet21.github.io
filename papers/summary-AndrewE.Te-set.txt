@@ -1,0 +1,263 @@
+1: Bell CG, Lowe R, Adams PD, Baccarelli AA, Beck S, Bell JT, Christensen BC,
+Gladyshev VN, Heijmans BT, Horvath S, Ideker T, Issa JJ, Kelsey KT, Marioni RE,
+Reik W, Relton CL, Schalkwyk LC, Teschendorff AE, Wagner W, Zhang K, Rakyan VK.
+DNA methylation aging clocks: challenges and recommendations. Genome Biol. 2019
+Nov 25;20(1):249. doi: 10.1186/s13059-019-1824-y. PMID: 31767039; PMCID:
+PMC6876109.
+
+2: Levine ME, Lu AT, Chen BH, Hernandez DG, Singleton AB, Ferrucci L, Bandinelli
+S, Salfati E, Manson JE, Quach A, Kusters CD, Kuh D, Wong A, Teschendorff AE,
+Widschwendter M, Ritz BR, Absher D, Assimes TL, Horvath S. Menopause accelerates
+biological aging. Proc Natl Acad Sci U S A. 2016 Aug 16;113(33):9327-32. doi:
+10.1073/pnas.1604558113. Epub 2016 Jul 25. PMID: 27457926; PMCID: PMC4995944.
+
+3: Tian Y, Morris TJ, Webster AP, Yang Z, Beck S, Feber A, Teschendorff AE.
+ChAMP: updated methylation analysis pipeline for Illumina BeadChips.
+Bioinformatics. 2017 Dec 15;33(24):3982-3984. doi:
+10.1093/bioinformatics/btx513. PMID: 28961746; PMCID: PMC5860089.
+
+4: Widschwendter M, Jones A, Evans I, Reisel D, Dillner J, Sundström K,
+Steyerberg EW, Vergouwe Y, Wegwarth O, Rebitschek FG, Siebert U, Sroczynski G,
+de Beaufort ID, Bolt I, Cibula D, Zikan M, Bjørge L, Colombo N, Harbeck N,
+Dudbridge F, Tasse AM, Knoppers BM, Joly Y, Teschendorff AE, Pashayan N; FORECEE
+(4C) Consortium. Epigenome-based cancer risk prediction: rationale,
+opportunities and challenges. Nat Rev Clin Oncol. 2018 May;15(5):292-309. doi:
+10.1038/nrclinonc.2018.30. Epub 2018 Feb 27. PMID: 29485132.
+
+5: Herceg Z, Ghantous A, Wild CP, Sklias A, Casati L, Duthie SJ, Fry R, Issa JP,
+Kellermayer R, Koturbash I, Kondo Y, Lepeule J, Lima SCS, Marsit CJ, Rakyan V,
+Saffery R, Taylor JA, Teschendorff AE, Ushijima T, Vineis P, Walker CL,
+Waterland RA, Wiemels J, Ambatipudi S, Degli Esposti D, Hernandez-Vargas H.
+Roadmap for investigating epigenome deregulation and environmental origins of
+cancer. Int J Cancer. 2018 Mar 1;142(5):874-882. doi: 10.1002/ijc.31014. Epub
+2017 Sep 13. PMID: 28836271; PMCID: PMC6027626.
+
+6: Teschendorff AE, Zheng SC. Cell-type deconvolution in epigenome-wide
+association studies: a review and recommendations. Epigenomics. 2017
+May;9(5):757-768. doi: 10.2217/epi-2016-0153. Epub 2017 Mar 14. PMID: 28517979.
+
+7: Tang W, Wan S, Yang Z, Teschendorff AE, Zou Q. Tumor origin detection with
+tissue-specific miRNA and DNA methylation markers. Bioinformatics. 2018 Feb
+1;34(3):398-406. doi: 10.1093/bioinformatics/btx622. PMID: 29028927.
+
+8: Zheng SC, Widschwendter M, Teschendorff AE. Epigenetic drift, epigenetic
+clocks and cancer risk. Epigenomics. 2016 May;8(5):705-19. doi:
+10.2217/epi-2015-0017. Epub 2016 Apr 22. PMID: 27104983.
+
+9: You C, Wu S, Zheng SC, Zhu T, Jing H, Flagg K, Wang G, Jin L, Wang S,
+Teschendorff AE. A cell-type deconvolution meta-analysis of whole blood EWAS
+reveals lineage-specific smoking-associated DNA methylation changes. Nat Commun.
+2020 Sep 22;11(1):4779. doi: 10.1038/s41467-020-18618-y. PMID: 32963246; PMCID:
+PMC7508850.
+
+10: Teschendorff AE, Relton CL. Statistical and integrative system-level
+analysis of DNA methylation data. Nat Rev Genet. 2018 Mar;19(3):129-147. doi:
+10.1038/nrg.2017.86. Epub 2017 Nov 13. PMID: 29129922.
+
+11: Battram T, Richmond RC, Baglietto L, Haycock PC, Perduca V, Bojesen SE,
+Gaunt TR, Hemani G, Guida F, Carreras-Torres R, Hung R, Amos CI, Freeman JR,
+Sandanger TM, Nøst TH, Nordestgaard BG, Teschendorff AE, Polidoro S, Vineis P,
+Severi G, Hodge AM, Giles GG, Grankvist K, Johansson MB, Johansson M, Davey
+Smith G, Relton CL. Appraising the causal relevance of DNA methylation for risk
+of lung cancer. Int J Epidemiol. 2019 Oct 1;48(5):1493-1504. doi:
+10.1093/ije/dyz190. PMID: 31549173; PMCID: PMC6857764.
+
+12: Teschendorff AE. A comparison of epigenetic mitotic-like clocks for cancer
+risk prediction. Genome Med. 2020 Jun 24;12(1):56. doi:
+10.1186/s13073-020-00752-3. PMID: 32580750; PMCID: PMC7315560.
+
+13: Breeze CE, Reynolds AP, van Dongen J, Dunham I, Lazar J, Neph S, Vierstra J,
+Bourque G, Teschendorff AE, Stamatoyannopoulos JA, Beck S. eFORGE v2.0: updated
+analysis of cell type-specific signal in epigenomic data. Bioinformatics. 2019
+Nov 1;35(22):4767-4769. doi: 10.1093/bioinformatics/btz456. PMID: 31161210;
+PMCID: PMC6853678.
+
+14: Teschendorff AE, Zhu T, Breeze CE, Beck S. EPISCORE: cell type deconvolution
+of bulk tissue DNA methylomes from single-cell RNA-Seq data. Genome Biol. 2020
+Sep 4;21(1):221. doi: 10.1186/s13059-020-02126-9. PMID: 32883324; PMCID:
+PMC7650528.
+
+15: Dong D, Tian Y, Zheng SC, Teschendorff AE. ebGSEA: an improved Gene Set
+Enrichment Analysis method for Epigenome-Wide-Association Studies.
+Bioinformatics. 2019 Sep 15;35(18):3514-3516. doi:
+10.1093/bioinformatics/btz073. PMID: 30715212; PMCID: PMC6748733.
+
+16: Zheng SC, Breeze CE, Beck S, Teschendorff AE. Identification of
+differentially methylated cell types in epigenome-wide association studies. Nat
+Methods. 2018 Dec;15(12):1059-1066. doi: 10.1038/s41592-018-0213-x. Epub 2018
+Nov 30. PMID: 30504870; PMCID: PMC6277016.
+
+17: Teschendorff AE, Jing H, Paul DS, Virta J, Nordhausen K. Tensorial blind
+source separation for improved analysis of multi-omic data. Genome Biol. 2018
+Jun 8;19(1):76. doi: 10.1186/s13059-018-1455-8. PMID: 29884221; PMCID:
+PMC5994057.
+
+18: Zheng SC, Beck S, Jaffe AE, Koestler DC, Hansen KD, Houseman AE, Irizarry
+RA, Teschendorff AE. Correcting for cell-type heterogeneity in epigenome-wide
+association studies: revisiting previous analyses. Nat Methods. 2017 Feb
+28;14(3):216-217. doi: 10.1038/nmeth.4187. PMID: 28245219; PMCID: PMC6659733.
+
+19: Wang Y, Qian M, Ruan P, Teschendorff AE, Wang S. Detection of epigenetic
+field defects using a weighted epigenetic distance-based method. Nucleic Acids
+Res. 2019 Jan 10;47(1):e6. doi: 10.1093/nar/gky882. PMID: 30304472; PMCID:
+PMC6326818.
+
+20: Yang Z, Wu L, Wang A, Tang W, Zhao Y, Zhao H, Teschendorff AE. dbDEMC 2.0:
+updated database of differentially expressed miRNAs in human cancers. Nucleic
+Acids Res. 2017 Jan 4;45(D1):D812-D818. doi: 10.1093/nar/gkw1079. Epub 2016 Nov
+28. PMID: 27899556; PMCID: PMC5210560.
+
+21: Chen W, Morabito SJ, Kessenbrock K, Enver T, Meyer KB, Teschendorff AE.
+Single-cell landscape in mammary epithelium reveals bipotent-like cells
+associated with breast cancer risk and outcome. Commun Biol. 2019 Aug 9;2:306.
+doi: 10.1038/s42003-019-0554-8. PMID: 31428694; PMCID: PMC6689007.
+
+22: Teschendorff AE, Enver T. Single-cell entropy for accurate estimation of
+differentiation potency from a cell's transcriptome. Nat Commun. 2017 Jun
+1;8:15599. doi: 10.1038/ncomms15599. PMID: 28569836; PMCID: PMC5461595.
+
+23: Teschendorff AE, Wang N. Improved detection of tumor suppressor events in
+single-cell RNA-Seq data. NPJ Genom Med. 2020 Oct 7;5:43. doi:
+10.1038/s41525-020-00151-y. PMID: 33083012; PMCID: PMC7541488.
+
+24: Teschendorff AE. Avoiding common pitfalls in machine learning omic data
+science. Nat Mater. 2019 May;18(5):422-427. doi: 10.1038/s41563-018-0241-z.
+PMID: 30478452.
+
+25: Breeze CE, Paul DS, van Dongen J, Butcher LM, Ambrose JC, Barrett JE, Lowe
+R, Rakyan VK, Iotchkova V, Frontini M, Downes K, Ouwehand WH, Laperle J, Jacques
+PÉ, Bourque G, Bergmann AK, Siebert R, Vellenga E, Saeed S, Matarese F, Martens
+JHA, Stunnenberg HG, Teschendorff AE, Herrero J, Birney E, Dunham I, Beck S.
+eFORGE: A Tool for Identifying Cell Type-Specific Signal in Epigenomic Data.
+Cell Rep. 2016 Nov 15;17(8):2137-2150. doi: 10.1016/j.celrep.2016.10.059. PMID:
+27851974; PMCID: PMC5120369.
+
+26: Yang Z, Wong A, Kuh D, Paul DS, Rakyan VK, Leslie RD, Zheng SC,
+Widschwendter M, Beck S, Teschendorff AE. Correlation of an epigenetic mitotic
+clock with cancer risk. Genome Biol. 2016 Oct 3;17(1):205. doi:
+10.1186/s13059-016-1064-3. PMID: 27716309; PMCID: PMC5046977.
+
+27: Zhu T, Zheng SC, Paul DS, Horvath S, Teschendorff AE. Cell and tissue type
+independent age-associated DNA methylation changes are not rare but common.
+Aging (Albany NY). 2018 Nov 27;10(11):3541-3557. doi: 10.18632/aging.101666.
+PMID: 30482885; PMCID: PMC6286821.
+
+28: Zheng SC, Breeze CE, Beck S, Dong D, Zhu T, Ma L, Ye W, Zhang G,
+Teschendorff AE. EpiDISH web server: Epigenetic Dissection of Intra-Sample-
+Heterogeneity with online GUI. Bioinformatics. 2019 Nov 9;36(6):1950–1. doi:
+10.1093/bioinformatics/btz833. Epub ahead of print. PMID: 31710662; PMCID:
+PMC7703755.
+
+29: Chen W, Teschendorff AE. Estimating Differentiation Potency of Single Cells
+Using Single-Cell Entropy (SCENT). Methods Mol Biol. 2019;1935:125-139. doi:
+10.1007/978-1-4939-9057-3_9. PMID: 30758824.
+
+30: Paul DS, Teschendorff AE, Dang MA, Lowe R, Hawa MI, Ecker S, Beyan H,
+Cunningham S, Fouts AR, Ramelius A, Burden F, Farrow S, Rowlston S, Rehnstrom K,
+Frontini M, Downes K, Busche S, Cheung WA, Ge B, Simon MM, Bujold D, Kwan T,
+Bourque G, Datta A, Lowy E, Clarke L, Flicek P, Libertini E, Heath S, Gut M, Gut
+IG, Ouwehand WH, Pastinen T, Soranzo N, Hofer SE, Karges B, Meissner T, Boehm
+BO, Cilio C, Elding Larsson H, Lernmark Å, Steck AK, Rakyan VK, Beck S, Leslie
+RD. Increased DNA methylation variability in type 1 diabetes across three immune
+effector cell types. Nat Commun. 2016 Nov 29;7:13555. doi: 10.1038/ncomms13555.
+PMID: 27898055; PMCID: PMC5141286.
+
+31: Wang Y, Teschendorff AE, Widschwendter M, Wang S. Accounting for
+differential variability in detecting differentially methylated regions. Brief
+Bioinform. 2019 Jan 18;20(1):47-57. doi: 10.1093/bib/bbx097. PMID: 29912290.
+
+32: Teschendorff AE, Gao Y, Jones A, Ruebner M, Beckmann MW, Wachter DL,
+Fasching PA, Widschwendter M. DNA methylation outliers in normal breast tissue
+identify field defects that are enriched in cancer. Nat Commun. 2016 Jan
+29;7:10478. doi: 10.1038/ncomms10478. PMID: 26823093; PMCID: PMC4740178.
+
+33: Gao Y, Teschendorff AE. Epigenetic and genetic deregulation in cancer target
+distinct signaling pathway domains. Nucleic Acids Res. 2017 Jan
+25;45(2):583-596. doi: 10.1093/nar/gkw1100. Epub 2016 Nov 29. PMID: 27899617;
+PMCID: PMC5314760.
+
+34: Zheng SC, Webster AP, Dong D, Feber A, Graham DG, Sullivan R, Jevons S,
+Lovat LB, Beck S, Widschwendter M, Teschendorff AE. A novel cell-type
+deconvolution algorithm reveals substantial contamination by immune cells in
+saliva, buccal and cervix. Epigenomics. 2018 Jul;10(7):925-940. doi:
+10.2217/epi-2018-0037. Epub 2018 Apr 25. PMID: 29693419.
+
+35: Teschendorff AE, Jones A, Widschwendter M. Stochastic epigenetic outliers
+can define field defects in cancer. BMC Bioinformatics. 2016 Apr 22;17:178. doi:
+10.1186/s12859-016-1056-z. PMID: 27103033; PMCID: PMC4840974.
+
+36: Teschendorff AE, Zheng SC, Feber A, Yang Z, Beck S, Widschwendter M. The
+multi-omic landscape of transcription factor inactivation in cancer. Genome Med.
+2016 Aug 25;8(1):89. doi: 10.1186/s13073-016-0342-8. PMID: 27562343; PMCID:
+PMC4997779.
+
+37: Kalwa M, Hänzelmann S, Otto S, Kuo CC, Franzen J, Joussen S, Fernandez-
+Rebollo E, Rath B, Koch C, Hofmann A, Lee SH, Teschendorff AE, Denecke B, Lin Q,
+Widschwendter M, Weinhold E, Costa IG, Wagner W. The lncRNA HOTAIR impacts on
+mesenchymal stem cells via triple helix formation. Nucleic Acids Res. 2016 Dec
+15;44(22):10631-10643. doi: 10.1093/nar/gkw802. Epub 2016 Sep 14. PMID:
+27634931; PMCID: PMC5159544.
+
+38: Chen Y, Breeze CE, Zhen S, Beck S, Teschendorff AE. Tissue-independent and
+tissue-specific patterns of DNA methylation alteration in cancer. Epigenetics
+Chromatin. 2016 Mar 8;9:10. doi: 10.1186/s13072-016-0058-4. PMID: 26958079;
+PMCID: PMC4782576.
+
+39: Teschendorff AE. Epigenetic clocks galore: a new improved clock predicts
+age-acceleration in Hutchinson Gilford Progeria Syndrome patients. Aging (Albany
+NY). 2018 Aug 21;10(8):1799-1800. doi: 10.18632/aging.101533. PMID: 30130743;
+PMCID: PMC6128420.
+
+40: Shi J, Teschendorff AE, Chen W, Chen L, Li T. Quantifying Waddington's
+epigenetic landscape: a comparison of single-cell potency measures. Brief
+Bioinform. 2020 Jan 17;21(1):248-261. doi: 10.1093/bib/bby093. PMID: 30289442.
+
+41: Widschwendter M, Zikan M, Wahl B, Lempiäinen H, Paprotka T, Evans I, Jones
+A, Ghazali S, Reisel D, Eichner J, Rujan T, Yang Z, Teschendorff AE, Ryan A,
+Cibula D, Menon U, Wittenberger T. The potential of circulating tumor DNA
+methylation analysis for the early detection and management of ovarian cancer.
+Genome Med. 2017 Dec 22;9(1):116. doi: 10.1186/s13073-017-0500-7. PMID:
+29268796; PMCID: PMC5740748.
+
+42: Lawn RB, Anderson EL, Suderman M, Simpkin AJ, Gaunt TR, Teschendorff AE,
+Widschwendter M, Hardy R, Kuh D, Relton CL, Howe LD. Psychosocial adversity and
+socioeconomic position during childhood and epigenetic age: analysis of two
+prospective cohort studies. Hum Mol Genet. 2018 Apr 1;27(7):1301-1308. doi:
+10.1093/hmg/ddy036. Erratum in: Hum Mol Genet. 2024 Sep 19;33(19):1726. doi:
+10.1093/hmg/ddae118. PMID: 29365106; PMCID: PMC5985722.
+
+43: Wang Y, Qian M, Ruan P, Teschendorff AE, Wang S. Detection of Epigenetic
+Field Defects Using a Weighted Epigenetic Distance-Based Method. Methods Mol
+Biol. 2020;2117:109-131. doi: 10.1007/978-1-0716-0301-7_6. PMID: 31960375.
+
+44: Teschendorff AE, Breeze CE, Zheng SC, Beck S. A comparison of reference-
+based algorithms for correcting cell-type heterogeneity in Epigenome-Wide
+Association Studies. BMC Bioinformatics. 2017 Feb 13;18(1):105. doi:
+10.1186/s12859-017-1511-5. PMID: 28193155; PMCID: PMC5307731.
+
+45: Gao Y, Widschwendter M, Teschendorff AE. DNA Methylation Patterns in Normal
+Tissue Correlate more Strongly with Breast Cancer Status than Copy-Number
+Variants. EBioMedicine. 2018 May;31:243-252. doi: 10.1016/j.ebiom.2018.04.025.
+Epub 2018 May 4. PMID: 29735413; PMCID: PMC6013931.
+
+46: Pan S, Lai H, Shen Y, Breeze C, Beck S, Hong T, Wang C, Teschendorff AE. DNA
+methylome analysis reveals distinct epigenetic patterns of ascending aortic
+dissection and bicuspid aortic valve. Cardiovasc Res. 2017 May 1;113(6):692-704.
+doi: 10.1093/cvr/cvx050. PMID: 28444195.
+
+47: Chen Y, Widschwendter M, Teschendorff AE. Systems-epigenomics inference of
+transcription factor activity implicates aryl-hydrocarbon-receptor inactivation
+as a key event in lung cancer development. Genome Biol. 2017 Dec 20;18(1):236.
+doi: 10.1186/s13059-017-1366-0. PMID: 29262847; PMCID: PMC5738803.
+
+48: Gao Y, Jones A, Fasching PA, Ruebner M, Beckmann MW, Widschwendter M,
+Teschendorff AE. Erratum to: The integrative epigenomic-transcriptomic landscape
+of ER positive breast cancer. Clin Epigenetics. 2016 Jun 1;8:63. doi:
+10.1186/s13148-016-0231-4. Erratum for: Clin Epigenetics. 2015 Dec 09;7:126.
+doi: 10.1186/s13148-015-0159-0. PMID: 27257442; PMCID: PMC4890493.
+
+49: Doufekas K, Zheng SC, Ghazali S, Wong M, Mohamed Y, Jones A, Reisel D, Mould
+T, Olaitan A, Macdonald N, Teschendorff AE, Widschwendter M. DNA Methylation
+Signatures in Vaginal Fluid Samples for Detection of Cervical and Endometrial
+Cancer. Int J Gynecol Cancer. 2016 Jun 2. doi: 10.1097/IGC.0000000000000739.
+Epub ahead of print. PMID: 27258725.

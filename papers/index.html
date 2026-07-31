@@ -26,12 +26,19 @@ categories:
   {% assign sorted_papers = site.papers | sort: 'date' | reverse %}
 
   {% assign prev_year = "" %}
+  {% assign older_papers_open = false %}
   {% for paper in sorted_papers %}
     {% capture this_year %}{{ paper.year }}{% endcapture %}
 
     {% if this_year != prev_year %}
       {% if prev_year != "" %}
         </div>
+      {% endif %}
+
+      {% if this_year < 2020 and older_papers_open == false %}
+        {% assign older_papers_open = true %}
+        <details class="older-papers">
+          <summary class="btn btn-default">More papers (before 2020)</summary>
       {% endif %}
       
       {% assign prev_year = this_year %}
@@ -77,5 +84,9 @@ categories:
 
   {% if prev_year != "" %}
     </div>
+  {% endif %}
+
+  {% if older_papers_open %}
+    </details>
   {% endif %}
 </div>
