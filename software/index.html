@@ -25,15 +25,11 @@ categories:
     </div>
     <div class="bigspacer"></div>
 
-    {% assign desired_order = "EpiDISH|EpiSCORE|EpiMitClocks|SCENT|CancerStemID|SCIRA|ebGSEA|ELVAR|DICE" | split:"|" %}
-
-    {% for abbr in desired_order %}
-      {% for sw in active_sw %}
-        {% if sw.abbreviation == abbr %}
-          <div class="row">
-            <div class="col-md-12">
-              <div class="software-card">
-                <div class="row">
+    {% for sw in active_sw %}
+      <div class="row">
+        <div class="col-md-12">
+          <div class="software-card">
+            <div class="row">
 
                   <!-- 左侧文字 1/2 宽度 -->
                   <div class="col-md-6">
@@ -83,12 +79,10 @@ categories:
                     {% endif %}
                   </div>
 
-                </div>
-              </div>
             </div>
           </div>
-        {% endif %}
-      {% endfor %}
+        </div>
+      </div>
     {% endfor %}
 
     <!-- ✅ Active Software 区块结束后再放分隔线 -->

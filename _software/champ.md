@@ -3,7 +3,7 @@ abbreviation: "ChAMP"
 categories:
   - software
 wholeName: "The Chip Analysis Methylation Pipeline"
-state: "Legacy"
+state: "Active"
 link1: "https://bioconductor.org/packages/release/bioc/html/ChAMP.html"
 link1Site: "Bioconductor"
 link2: ""

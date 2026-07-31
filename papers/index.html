@@ -35,10 +35,10 @@ categories:
         </div>
       {% endif %}
 
-      {% if this_year < 2020 and older_papers_open == false %}
+      {% if paper.year < 2020 and older_papers_open == false %}
         {% assign older_papers_open = true %}
         <details class="older-papers">
-          <summary class="btn btn-default">More papers (before 2020)</summary>
+          <summary style="display: block; cursor: pointer; list-style: none; text-align: center;" aria-label="Show papers published before 2020">------------- More -------------</summary>
       {% endif %}
       
       {% assign prev_year = this_year %}
