@@ -2,7 +2,7 @@
 abbreviation: "OmniAge"
 categories:
   - software
-wholeName: "OmniAge: Biological Aging Biomarker Analysis Suite"
+wholeName: "Biological Aging Biomarker Analysis Suite"
 state: "Active"
 link1: "https://github.com/Duzhaozhen/OmniAge"
 link1Site: "Github"
