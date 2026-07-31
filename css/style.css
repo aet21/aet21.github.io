@@ -6422,6 +6422,58 @@ html, body {
   text-shadow: 0 0 0 #000, 0.25px 0 #000;
 }
 
+.older-papers {
+  margin-top: 2.5rem;
+}
+
+.older-papers__summary {
+  align-items: center;
+  color: #337ab7;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 0.55rem;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.older-papers__summary::-webkit-details-marker {
+  display: none;
+}
+
+.older-papers__summary::before,
+.older-papers__summary::after {
+  background: #d9e2ea;
+  content: "";
+  height: 1px;
+  max-width: 180px;
+  width: 18%;
+}
+
+.older-papers__summary:hover,
+.older-papers__summary:focus {
+  color: #23527c;
+  outline: none;
+}
+
+.older-papers__summary:focus-visible {
+  outline: 2px solid #337ab7;
+  outline-offset: 5px;
+}
+
+.older-papers__chevron {
+  font-size: 20px;
+  line-height: 0.6;
+  transition: transform 0.2s ease;
+}
+
+.older-papers[open] .older-papers__chevron {
+  transform: rotate(180deg);
+}
+
 .projectbox{
   text-align: center;          /* 标题等居中 */
 }
