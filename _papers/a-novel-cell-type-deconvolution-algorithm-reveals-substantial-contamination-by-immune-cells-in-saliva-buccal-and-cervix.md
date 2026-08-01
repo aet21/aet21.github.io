@@ -9,5 +9,5 @@ date: 2018-07-01
 journal: "Epigenomics"
 paper_url: "https://doi.org/10.2217/epi-2018-0037"
 image: "/papers/covers/Epigenomics.jpg"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---

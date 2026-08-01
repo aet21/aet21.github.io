@@ -9,5 +9,5 @@ date: 2016-05-01
 journal: "Epigenomics"
 paper_url: "https://doi.org/10.2217/epi-2015-0017"
 image: "/papers/covers/Epigenomics.jpg"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---

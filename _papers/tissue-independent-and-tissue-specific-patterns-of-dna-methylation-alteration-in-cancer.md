@@ -9,5 +9,5 @@ date: 2016-03-08
 journal: "Epigenetics Chromatin"
 paper_url: "https://doi.org/10.1186/s13072-016-0058-4"
 image: "/papers/covers/Epigenetics Chromatin.webp"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---

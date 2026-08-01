@@ -9,5 +9,5 @@ date: 2017-05-01
 journal: "Cardiovasc Res"
 paper_url: "https://doi.org/10.1093/cvr/cvx050"
 image: "/papers/covers/Cardiovasc Res.jpg"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---

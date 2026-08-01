@@ -9,5 +9,5 @@ date: 2019-08-09
 journal: "Commun Biol"
 paper_url: "https://doi.org/10.1038/s42003-019-0554-8"
 image: "/papers/covers/Communicationsbiology.jpg"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---

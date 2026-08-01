@@ -9,5 +9,5 @@ date: 2018-02-01
 journal: "Bioinformatics"
 paper_url: "https://doi.org/10.1093/bioinformatics/btx622"
 image: "/papers/covers/Bioinformatics.jpg"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---

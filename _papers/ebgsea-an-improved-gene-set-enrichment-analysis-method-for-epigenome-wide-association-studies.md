@@ -9,5 +9,5 @@ date: 2019-09-15
 journal: "Bioinformatics"
 paper_url: "https://doi.org/10.1093/bioinformatics/btz073"
 image: "/papers/covers/Bioinformatics.jpg"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---

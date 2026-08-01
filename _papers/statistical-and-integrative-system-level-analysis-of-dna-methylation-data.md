@@ -9,5 +9,5 @@ date: 2018-03-01
 journal: "Nat Rev Genet"
 paper_url: "https://doi.org/10.1038/nrg.2017.86"
 image: "/papers/covers/Nature Reviews Genetics.jpg"
-Is_corresponding: "False"
+Is_corresponding: "True"
 ---
