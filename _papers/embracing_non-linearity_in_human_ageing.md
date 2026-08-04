@@ -2,7 +2,7 @@
 title: "Embracing non-linearity in human ageing"
 categories:
   - papers
-authors: "Grolaux, R, Teschendorff, AE & Eynon, N"
+authors: "Robin Grolaux, Andrew E. Teschendorff, Nir Eynon"
 year: 2026
 month: August
 date: 2026-08-03
